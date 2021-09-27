@@ -92,68 +92,68 @@ using System.Collections.Generic;
 
 
 
-class Animal        // PARENT CLASS WHICH IS USED FOR INHERITANCE FOR HIS CHILDRENS
-                // It's also called BASECLASS   
-{
-
-    public  string  Name { get; set; } // properties name always start with CAPITAL
-    public  int Age { get; set; }
-    public bool IsHungry { get; set; }
-
-    public Animal(string name,int age)
-    {
-        // this.name = name;  
-        Name = name; 
-        Age = age;
-        // we are setting the animals are hungry by default  
-        IsHungry = false;
-
-    }
-
-    //an empty virtual method "makeSound" to override other classes
-    public virtual void makeSounds() // Virtual method for override other classes
+    class Animal        // PARENT CLASS WHICH IS USED FOR INHERITANCE FOR HIS CHILDRENS
+                    // It's also called BASECLASS   
     {
 
-        Console.WriteLine("He make's sound like awooooooo");
+        public  string  Name { get; set; } // properties name always start with CAPITAL
+        public  int Age { get; set; }
+        public bool IsHungry { get; set; }
 
-    }
-
-    public virtual void Eat()
-    {
-        if (IsHungry)
+        public Animal(string name,int age)
         {
-            Console.WriteLine("He/She is eating");         
-        }
-        else
-        {
-            Console.WriteLine("He/She taking rest");
+            // this.name = name;  
+            Name = name; 
+            Age = age;
+            // we are setting the animals are hungry by default  
+            IsHungry = false;
+
         }
 
+        //an empty virtual method "makeSound" to override other classes
+        public virtual void makeSounds() // Virtual method for override other classes
+        {
+
+            Console.WriteLine("He make's sound like awooooooo");
+
+        }
+
+        public virtual void Eat()
+        {
+            if (IsHungry)
+            {
+                Console.WriteLine("He/She is eating");         
+            }
+            else
+            {
+                Console.WriteLine("He/She taking rest");
+            }
+
+        }
+
     }
 
-}
-
-    //................................................//
+        //................................................//
 
 
-class Wolf  : Animal // It's Inherited from ANIMAL [Child of anilmal]
-            // Wolf is a INHERITED CLASS OR SUB CLASS           
-{
-    public Wolf(string name,int age) : base(name,age)
+    class Wolf  : Animal // It's Inherited from ANIMAL [Child of anilmal]
+                // Wolf is a INHERITED CLASS OR SUB CLASS           
     {
+        public Wolf(string name,int age) : base(name,age)
+        {
+
+        }
+
+        public override void makeSounds()
+        {
+            base.makeSounds();
+        }
+        public override void Eat()
+        {
+            base.Eat();
+        }
 
     }
-
-    public override void makeSounds()
-    {
-        base.makeSounds();
-    }
-    public override void Eat()
-    {
-        base.Eat();
-    }
-
-}
 
 
 
