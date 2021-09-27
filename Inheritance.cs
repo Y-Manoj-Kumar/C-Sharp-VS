@@ -33,7 +33,6 @@ using System.Collections.Generic;
 
     }
 
-    
     //......................................//
 
     class TV : ElectricalDevice // Inheritance from ElectricalDEvice
