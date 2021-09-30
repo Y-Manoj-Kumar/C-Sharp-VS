@@ -7,6 +7,7 @@ using System.Collections.Generic;
     the attributes and behaviors which is defined in other class.
 */
 
+    #region  Electrical Device // It's a parent, TV and WateraHeater are it's childrens 
 //  Its a Child Of Electrical Device
     class WaterHeater : ElectricalDevice //Getting INheretence from ElectricalDevice
     {
@@ -61,7 +62,7 @@ using System.Collections.Generic;
     //            INHERITANCE EXAMPLE 
     // Electrical Device 
 
-    #region  Electrical Device // It's a parent, TV and WateraHeater are it's childrens 
+
 
     class ElectricalDevice 
     {
@@ -91,6 +92,7 @@ using System.Collections.Generic;
     #endregion
 
 
+    #region  Animal 
 
     class Animal        // PARENT CLASS WHICH IS USED FOR INHERITANCE FOR HIS CHILDRENS
                     // It's also called BASECLASS   
@@ -154,6 +156,29 @@ using System.Collections.Generic;
         }
 
     }
+    
+    #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

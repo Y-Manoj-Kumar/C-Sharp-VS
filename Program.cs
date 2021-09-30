@@ -94,12 +94,17 @@ namespace C_Sharp
 
             // TV var2 = new TV(true,"working");
             // var2.switchOff();
-            // var2.checking();            
+            // // var2.checking();            
 
-            Wolf anime = new Wolf("Bruce",12);
-            // Console.WriteLine($"He's {Wolf.Name} and he's {Wolf.Age} years old");
-            anime.Eat();
-            anime.makeSounds();
+            // Wolf anime = new Wolf("Bruce",12);
+            // // Console.WriteLine($"He's {Wolf.Name} and he's {Wolf.Age} years old");
+            // anime.Eat();
+            // anime.makeSounds();
+
+            GameFinishTime t1 = new GameFinishTime(12);
+             GameFinishTime t2 = new GameFinishTime(12);
+             Console.working(t1.equals(t2));
+            
             
 
 

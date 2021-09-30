@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MANOJ\\Documents\\GitHub\\C sharp\\C sharp.csproj",
+      "projectUniqueName": "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\C sharp.csproj",
       "projectName": "C sharp",
-      "projectPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C sharp\\C sharp.csproj",
+      "projectPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\C sharp.csproj",
       "packagesPath": "C:\\Users\\MANOJ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C sharp\\obj\\",
+      "outputPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

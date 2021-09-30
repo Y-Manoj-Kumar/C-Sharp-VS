@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MANOJ\\Documents\\GitHub\\C Sharp\\C sharp.csproj": {}
+    "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\C sharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MANOJ\\Documents\\GitHub\\C Sharp\\C sharp.csproj": {
+    "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\C sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MANOJ\\Documents\\GitHub\\C Sharp\\C sharp.csproj",
+        "projectUniqueName": "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\C sharp.csproj",
         "projectName": "C sharp",
-        "projectPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C Sharp\\C sharp.csproj",
+        "projectPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\C sharp.csproj",
         "packagesPath": "C:\\Users\\MANOJ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C Sharp\\obj\\",
+        "outputPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
