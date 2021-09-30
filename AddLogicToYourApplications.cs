@@ -31,7 +31,7 @@ CONDITIONAL OPERATOR
 */
 
 
-    #region  My
+#region  My
 class BusinessRules
 {
 
@@ -59,16 +59,14 @@ class BusinessRules
             {
                 Console.WriteLine("Welcome, Admin user.");
             }
+            else
+            {
+                Console.WriteLine("Better Luck Next time ADMIN");
+            }
 
         }
 
-        else
-        {
-            Console.WriteLine("Better Luck Next time ADMIN");
-        }
-
-
-        if (myPos == "Manager")
+        else if(myPos == "Manager")
         {
             Console.WriteLine("Please enter your level");
             String level = Console.ReadLine();
@@ -81,13 +79,19 @@ class BusinessRules
             {
                 Console.WriteLine("You do not have sufficient privileges.");
             }
+            else
+            {
+                Console.WriteLine("Better Luck Next time MANAGER");
+            }
 
         }
 
         else
         {
-            Console.WriteLine("Better Luck Next time MANAGER");
-        }
+            Console.WriteLine("...........Position Error.........");
+        }   
+        
+ 
     }
 
 }
