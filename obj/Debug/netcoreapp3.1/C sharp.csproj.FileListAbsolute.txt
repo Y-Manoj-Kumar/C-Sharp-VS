@@ -17,3 +17,10 @@ C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\obj\Debug\netcoreapp3.1\C shar
 C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\obj\Debug\netcoreapp3.1\C sharp.csproj.CoreCompileInputs.cache
 C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\obj\Debug\netcoreapp3.1\C sharp.dll
 C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\obj\Debug\netcoreapp3.1\C sharp.pdb
+C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\bin\Debug\netcoreapp3.1\C sharp.exe
+C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\bin\Debug\netcoreapp3.1\C sharp.deps.json
+C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\bin\Debug\netcoreapp3.1\C sharp.runtimeconfig.json
+C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\bin\Debug\netcoreapp3.1\C sharp.runtimeconfig.dev.json
+C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\bin\Debug\netcoreapp3.1\C sharp.dll
+C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\bin\Debug\netcoreapp3.1\C sharp.pdb
+C:\Users\MANOJ\Documents\GitHub\C-Sharp-VS-master\obj\Debug\netcoreapp3.1\C sharp.genruntimeconfig.cache

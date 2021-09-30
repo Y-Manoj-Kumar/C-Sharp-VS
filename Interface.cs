@@ -1,21 +1,21 @@
-using System;
-using System.Linq;
-using System.Collections.Generic;
+// using System;
+// using System.Linq;
+// using System.Collections.Generic;
 
-class Interface : IEquatable<GameFinishTime>
-{
+// class Interface : IEquatable<GameFinishTime>
+// {
 
-    public int GameFinishTime { get; set; }
+//     public int GameFinishTime { get; set; }
 
-    public Interface(int gamefinishtime)
-    {
-        GameFinishTime = gamefinishtime;
-    }
+//     public Interface(int gamefinishtime)
+//     {
+//         GameFinishTime = gamefinishtime;
+//     }
 
-    public bool  equals(GameFinishTime other)
-    {
-        return this.GameFinishTime == other.GameFinishTime ;
-    }
+//     public bool  equals(GameFinishTime other)
+//     {
+//         return this.GameFinishTime == other.GameFinishTime ;
+//     }
 
 
 
@@ -24,4 +24,4 @@ class Interface : IEquatable<GameFinishTime>
     
     
 
-}
+// }
