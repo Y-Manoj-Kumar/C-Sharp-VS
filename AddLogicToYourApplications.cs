@@ -27,9 +27,7 @@ CONDITIONAL OPERATOR
     int val = value/2 > 2 ? 2 : 3;
     Console.WriteLine(val);
 
-
 */
-
 
 #region  My
 class BusinessRules
@@ -50,12 +48,12 @@ class BusinessRules
         {
             Console.WriteLine("Please enter your level");
             String level = Console.ReadLine();
-            int myparse = int.Parse(level);
-            if(myparse > 55)
+            int myParse = int.Parse(level);
+            if(myParse > 55)
             {
                 Console.WriteLine("Welcome, Super Admin user.");
             }
-            else if(myparse <= 55)
+            else if(myParse <= 55)
             {
                 Console.WriteLine("Welcome, Admin user.");
             }
@@ -70,12 +68,12 @@ class BusinessRules
         {
             Console.WriteLine("Please enter your level");
             String level = Console.ReadLine();
-            int myparse = int.Parse(level);
-            if(myparse >= 20)
+            int myParse = int.Parse(level);
+            if(myParse >= 20)
             {
                 Console.WriteLine("Contact an Admin for access.");
             }
-            else if(myparse < 20)
+            else if(myParse < 20)
             {
                 Console.WriteLine("You do not have sufficient privileges.");
             }
@@ -97,3 +95,81 @@ class BusinessRules
 }
 
 #endregion
+
+
+#region Make it ErrorFree
+
+class ErrorIdentification
+{
+ 
+    // public void error()
+    // {
+    //     int[] numbers = { 4, 8, 15, 16, 23, 42 };
+    //     foreach (int number in numbers)
+    //     {
+    //         int total;
+    //         total += number;
+    //         if (number == 42)
+    //         {
+    //         bool found = true;
+    //         }
+    //     }
+    //     if (found) 
+    //     {
+    //         Console.WriteLine("Set contains 42");
+    //     }
+    //     Console.WriteLine($"Total: {total}");
+    // }
+
+    // METHOD - 1 By using Nested-if
+
+    public void errorFree1()
+    {
+        int[] numbers = { 4, 8, 15, 16, 23, 42 };
+        foreach (int number in numbers)
+        {
+            int total= 0;
+            total += number;
+
+            if (number == 42)
+            {
+                bool found = true;
+                if (found) 
+                {
+                    Console.WriteLine("Set contains 42");
+                }
+
+                Console.WriteLine($"Total: {total}");
+            }
+        
+        }
+            
+    }
+
+    // METHOD - 2  By making Local to Global variables
+
+    public void errorFree2()
+    {
+        int[] numbers = { 4, 8, 15, 16, 23, 42 };
+        int total = 0;
+        bool found = false;
+
+        foreach (int number in numbers)
+        {
+            total += number;
+            if (number == 42) found = true;
+        }
+
+        if (found) Console.WriteLine("Set contains 42"); // Code blocks has been removed
+
+        Console.WriteLine($"Total: {total}");
+    }
+
+
+}
+
+
+
+#endregion
+
+
