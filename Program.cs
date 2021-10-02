@@ -105,11 +105,11 @@ namespace C_Sharp
             //  GameFinishTime t2 = new GameFinishTime(12);
             //  Console.working(t1.equals(t2));
             
-            // BusinessRules rule = new BusinessRules();
-            // rule.position();
+            BusinessRules rule = new BusinessRules();
+            rule.position();
 
-            ErrorIdentification var = new ErrorIdentification();
-            var.errorFree2();
+            // ErrorIdentification var = new ErrorIdentification();
+            // var.errorFree2();
             
 
 
