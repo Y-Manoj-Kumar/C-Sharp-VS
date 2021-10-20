@@ -195,4 +195,24 @@ class FizzBuzz
 
 
 
+#region Looping
 
+    class Looping
+    {
+
+        public void loop()
+        {
+
+            
+
+
+
+        }
+
+
+
+    }
+
+
+
+#endregion
