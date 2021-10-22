@@ -175,7 +175,7 @@ class ErrorIdentification
 
 class FizzBuzz
 {
-    public void FizzBuzz()
+    public void fizzBuzz()
     {
             for (int i = 1; i < 101; i++)
         {

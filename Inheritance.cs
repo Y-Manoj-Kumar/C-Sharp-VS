@@ -14,23 +14,23 @@ using System.Collections.Generic;
 
         //properties for waterheater
 
-        public WaterHeater(bool ison, string gettingHeat):base(ison,gettingHeat) // Constructor
+        public WaterHeater(bool ison, string gettingHeat):base(ison,gettingHeat)        //Constructor
         {
 
         }
 
-     public void checking()
-        {
-            if(IsOn)
+        public void checking()
             {
-                Console.WriteLine("Good to go for bath");
-                
+                if(IsOn)
+                {
+                    Console.WriteLine("Good to go for bath");
+                    
+                }
+                else
+                {
+                    Console.WriteLine("Wait for some time");
+                }
             }
-            else
-            {
-                Console.WriteLine("Wait for some time");
-            }
-        }
 
     }
 
