@@ -133,9 +133,8 @@ namespace C_Sharp
             // ConeIceCream var1 = new ConeIceCream("ButterScotch",true);
             // var1.cost();
 
-
-            Car var = new Car();
-            var.carDetails();
+            Enum var = new Enum();
+            var.enums();
             
             
 

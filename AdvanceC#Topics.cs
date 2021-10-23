@@ -29,3 +29,33 @@ using System.Linq;
     }
 
 
+
+    //  An enum is a special "class" that represents a group of constants
+
+    class Enum
+    {
+
+        enum Months{Jan =1,Feb,Mar,Apr,May,Jun,Jul,AugSep,Oct,Nov,Dec}; // We can re assign the index
+
+        Months one = Months.Jan;
+        Months two = Months.Feb;
+        Months three = Months.Mar;
+
+        public void enums()
+        {
+            Console.WriteLine(one );
+            
+        }
+        
+    }
+
+
+    class Math
+    {
+
+
+
+        
+    }
+
+
