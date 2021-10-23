@@ -94,7 +94,23 @@ namespace C_Sharp
 
             // TV var2 = new TV(true,"working");
             // var2.switchOff();
-            // // var2.checking();            
+            // // var2.checking();       
+
+
+            // var device = new List<ElectricalDevice>
+            // {
+            //     new WaterHeater(true,"Working"),
+            //     new TV (false,"Notworkinh")
+
+            // };
+
+            // foreach(var dev in device)
+            // {
+            //     ElectricalDevice.Ison();
+
+            // }
+
+
 
             // Wolf anime = new Wolf("Bruce",12);
             // // Console.WriteLine($"He's {Wolf.Name} and he's {Wolf.Age} years old");
@@ -114,10 +130,12 @@ namespace C_Sharp
             // IceCream var = new IceCream("Vanilla",false);
             // var.cost();
 
-            ConeIceCream var1 = new ConeIceCream("ButterScotch",true);
-            var1.cost();
+            // ConeIceCream var1 = new ConeIceCream("ButterScotch",true);
+            // var1.cost();
 
 
+            Car var = new Car();
+            var.carDetails();
             
             
 

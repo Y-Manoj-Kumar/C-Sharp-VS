@@ -10,6 +10,9 @@ an employee.
 */
 
 
+//  VIRTUAL,OVERRIDE,SEALED,ABSTRACT
+
+
 #region  Polymorphism
 
 
@@ -64,6 +67,29 @@ an employee.
 
     }
 
-            
+        
+#endregion
+
+
+#region  Reading Text
+
+
+class ReadingText
+{
+
+ 
+
+
+
+
+
+
+
+
+}
+
+
+
+
 
 #endregion
