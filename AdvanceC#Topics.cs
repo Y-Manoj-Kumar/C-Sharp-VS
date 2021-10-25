@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-// ACCESS MODIFIERS,STRUCTS,ENUMS,
+// ACCESS MODIFIERS,STRUCTS,ENUMS,MATH,RANDOM,REGULAR EXPRESSIONS
 
     struct Car
     {
@@ -50,12 +50,58 @@ using System.Linq;
     }
 
 
+
     class Math
     {
 
+        // CEILING,FLOOR,MIN,MAX,POW,PI,SQRT,
+        public void math()
+        {
+            int num1 = 12;
+            int num2 = 10;
 
+            // Console.WriteLine("Minimum of num1 {0} and num2 {1} is {2}",num1,num2,Math.Min(num1,num2));
 
-        
+        }
     }
 
 
+
+    class RandomDemo
+    {
+        public void random()
+        {
+
+            Console.WriteLine("Please enter your question ? ");
+            Console.ReadLine();
+
+            Random var = new Random();
+            int solution;
+
+            solution = var.Next(1, 4);
+            if (solution == 1)
+            {
+                Console.WriteLine("YES");
+                
+            }
+            else if(solution == 2)
+            {
+                Console.WriteLine("NO");
+            }
+            else
+            {
+                Console.WriteLine("MayBe");
+            }
+
+        }
+    }
+
+
+    class RegularExpressions
+    {
+        public void regExp()
+        {
+            
+        }
+
+    }
