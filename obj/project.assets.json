@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\C sharp.csproj",
+      "projectUniqueName": "C:\\Users\\MANOJ\\Documents\\GitHub\\csharp-VS-master\\C sharp.csproj",
       "projectName": "C sharp",
-      "projectPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\C sharp.csproj",
+      "projectPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\csharp-VS-master\\C sharp.csproj",
       "packagesPath": "C:\\Users\\MANOJ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\C-Sharp-VS-master\\obj\\",
+      "outputPath": "C:\\Users\\MANOJ\\Documents\\GitHub\\csharp-VS-master\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
       }
     }
   }

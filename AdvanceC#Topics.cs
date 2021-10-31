@@ -57,8 +57,8 @@ using System.Linq;
         // CEILING,FLOOR,MIN,MAX,POW,PI,SQRT,
         public void math()
         {
-            int num1 = 12;
-            int num2 = 10;
+            // int num1 = 12;
+            // int num2 = 10;
 
             // Console.WriteLine("Minimum of num1 {0} and num2 {1} is {2}",num1,num2,Math.Min(num1,num2));
 
@@ -101,7 +101,18 @@ using System.Linq;
     {
         public void regExp()
         {
-            
+
         }
 
     }
+
+
+
+
+
+
+
+
+
+
+    

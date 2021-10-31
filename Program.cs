@@ -136,8 +136,11 @@ namespace C_Sharp
             // Enum var = new Enum();
             // var.enums();
 
-            RandomDemo var = new RandomDemo();
-            var.random();
+            // RandomDemo var = new RandomDemo();
+            // var.random();
+
+            SimpleFile file1 = new SimpleFile();
+            file1.WriteFile();
             
             
 
