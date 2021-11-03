@@ -1,6 +1,4 @@
 using System;
-using System.Linq;
-using System.Collections.Generic;
 using System.IO;  // used in case of SimpleFile 
 
 class SimpleFile
@@ -8,7 +6,6 @@ class SimpleFile
     public void WriteFile()
     {
         // declare a variable which is path
-
         string path = "Chanti.txt";
 
         // Creates a new file to write 

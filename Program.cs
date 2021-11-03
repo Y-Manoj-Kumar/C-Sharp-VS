@@ -141,21 +141,6 @@ namespace C_Sharp
 
             SimpleFile file1 = new SimpleFile();
             file1.WriteFile();
-            
-            
-
-
-            
-            
-
-
-
-
-
-
-
-        
-  
 
         }     
         
