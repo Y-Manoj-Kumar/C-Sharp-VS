@@ -107,7 +107,30 @@ using System.Linq;
     }
 
 
+    //  While using Nullables you have to use "?" after the data type.
+class Nullables
+{
 
+    public void nullables()
+    {
+        int? num1 = null;
+        // int num2 = null;  This not gonna work in  case of nullable
+
+        double? doubNum1 = 23.4;
+        double? doubNum2 = new double? ();
+
+        
+
+        
+         
+    }
+
+
+
+
+
+
+}
 
 
 
