@@ -16,7 +16,6 @@ class StringManipulation
         //String Interpolation
         Console.WriteLine($"it's a new model{car},which is nearly {a}Rs",car,a);
 
-
     }
 
     public void ExerciseOne()

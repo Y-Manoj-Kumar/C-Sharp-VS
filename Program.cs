@@ -139,8 +139,12 @@ namespace C_Sharp
             // RandomDemo var = new RandomDemo();
             // var.random();
 
-            SimpleFile file1 = new SimpleFile();
-            file1.WriteFile();
+            // SimpleFile file1 = new SimpleFile();
+            // file1.WriteFile();
+        
+            // Delegate var = new Delegate();
+            // var.DisplayPeople("Kid",Person,IsMinor);
+ 
 
         }     
         
