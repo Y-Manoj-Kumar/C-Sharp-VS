@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Configuration;
 
 namespace C_Sharp
 {
@@ -11,8 +12,8 @@ namespace C_Sharp
         {
 
             Problems prob = new Problems();
-            prob.checkForPolindrome();
-            
+            // prob.IsPresentInArray(x:a,y:b);
+             
 
         }     
                    

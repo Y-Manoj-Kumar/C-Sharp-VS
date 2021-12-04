@@ -189,28 +189,44 @@ class Problems
     #endregion
 
 
-
-    #region Comparing two arrays using LINQ
+    #region Comparing two arrays 
     /*
-    -->Here we have to use bool conditin bcz we are checking given  two arrays are equal are not
-    -->Declare two Arrays 
+    
+    -->Here we have to use bool conditin bcz we are checking given  two arrays are equal are not.
+    -->Declare two Arrays, containing equal number of elemnts
+    -->Declare a bool 
     -->
     */
 
-    int[] q = {1,2,3,4};
-    int[] w ={1,2,3,4};
-    public void comparearray()
+int[] x = new int[]{1, 2, 3, 4};
+int[] y = new int[] { 5, 6, 1, 2, 7, 8};
+public bool IsPresentInArray(int[] a, int[] b)
+{
+    if (a.Length != b.Length) // checking equal number of elements present are not
     {
-        if(q == w)
+        return false;
+    }
+    else //checking elements in their respective index values  equal are not
+    {
+        for (int i = 0; i < a.Length; i++)
         {
-            Console.WriteLine("The given two arrays are equal");
-        }
-        else
-        {
-            Console.WriteLine("Given arrays are not equal");
+            if (a[i] != b[i])
+            {
+                return false;
+            }
         }
     }
- 
+    return true ;
+}
+
     #endregion
+
+
+    #region 
+
+
+
+    #endregion
+
 
 }
