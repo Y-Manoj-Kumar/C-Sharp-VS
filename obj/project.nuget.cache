@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LwC0Uu1olFBWZ0pkARoo+Wkq7B+bn76VJDoXXHd5IHCdJP5y1dNaBnySh4TuDGVsQZheGki6TP+NfV9+zh3MYw==",
+  "dgSpecHash": "1pxjBNomuHaNDeEnGTqG4JSKXYSIRrBrOw3rUJXJYiNm58XWDwSiJSqvSf0olK8TEEQ388ElbTfHEYf68fJBCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MANOJ\\Documents\\GitHub\\csharp-VS-master\\C sharp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\GITHUB REPO\\C-Sharp-VS\\C sharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
   "logs": []
 }

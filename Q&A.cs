@@ -190,4 +190,27 @@ class Problems
 
 
 
+    #region Comparing two arrays using LINQ
+    /*
+    -->Here we have to use bool conditin bcz we are checking given  two arrays are equal are not
+    -->Declare two Arrays 
+    -->
+    */
+
+    int[] q = {1,2,3,4};
+    int[] w ={1,2,3,4};
+    public void comparearray()
+    {
+        if(q == w)
+        {
+            Console.WriteLine("The given two arrays are equal");
+        }
+        else
+        {
+            Console.WriteLine("Given arrays are not equal");
+        }
+    }
+ 
+    #endregion
+
 }

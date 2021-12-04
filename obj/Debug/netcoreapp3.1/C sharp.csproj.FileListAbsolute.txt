@@ -37,3 +37,17 @@ C:\Users\MANOJ\Documents\GitHub\csharp-VS-master\obj\Debug\netcoreapp3.1\C sharp
 C:\Users\MANOJ\Documents\GitHub\csharp-VS-master\obj\Debug\netcoreapp3.1\C sharp.dll
 C:\Users\MANOJ\Documents\GitHub\csharp-VS-master\obj\Debug\netcoreapp3.1\C sharp.pdb
 C:\Users\MANOJ\Documents\GitHub\csharp-VS-master\obj\Debug\netcoreapp3.1\C sharp.genruntimeconfig.cache
+D:\GITHUB REPO\C-Sharp-VS\obj\Debug\netcoreapp3.1\C sharp.csproj.AssemblyReference.cache
+D:\GITHUB REPO\C-Sharp-VS\obj\Debug\netcoreapp3.1\C sharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\GITHUB REPO\C-Sharp-VS\obj\Debug\netcoreapp3.1\C sharp.AssemblyInfoInputs.cache
+D:\GITHUB REPO\C-Sharp-VS\obj\Debug\netcoreapp3.1\C sharp.AssemblyInfo.cs
+D:\GITHUB REPO\C-Sharp-VS\obj\Debug\netcoreapp3.1\C sharp.csproj.CoreCompileInputs.cache
+D:\GITHUB REPO\C-Sharp-VS\obj\Debug\netcoreapp3.1\C sharp.dll
+D:\GITHUB REPO\C-Sharp-VS\obj\Debug\netcoreapp3.1\C sharp.pdb
+D:\GITHUB REPO\C-Sharp-VS\bin\Debug\netcoreapp3.1\C sharp.exe
+D:\GITHUB REPO\C-Sharp-VS\bin\Debug\netcoreapp3.1\C sharp.deps.json
+D:\GITHUB REPO\C-Sharp-VS\bin\Debug\netcoreapp3.1\C sharp.runtimeconfig.json
+D:\GITHUB REPO\C-Sharp-VS\bin\Debug\netcoreapp3.1\C sharp.runtimeconfig.dev.json
+D:\GITHUB REPO\C-Sharp-VS\bin\Debug\netcoreapp3.1\C sharp.dll
+D:\GITHUB REPO\C-Sharp-VS\bin\Debug\netcoreapp3.1\C sharp.pdb
+D:\GITHUB REPO\C-Sharp-VS\obj\Debug\netcoreapp3.1\C sharp.genruntimeconfig.cache

@@ -9,12 +9,12 @@ namespace C_Sharp
             // A Class is BLUEPRINT of an Object 
         static void Main(string[] args)
         {
- 
- 
- 
+
+            Problems prob = new Problems();
+            prob.checkForPolindrome();
+            
 
         }     
-        
-            
+                   
     }
 }
