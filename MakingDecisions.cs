@@ -54,6 +54,10 @@ class UserLoginDetails
 }
 #endregion
 
+
+
+#region ScoreBoard 
+
 /*
   1.score as a int which is param1 
   2.highscore as a int whcich is param2
@@ -61,8 +65,6 @@ class UserLoginDetails
   4.Need to create method having two parameters 
   5.by using if statements we gona crosscheck the score and highscore 
 */
-
-#region ScoreBoard 
 class Scoreboard
 {
     string highScoreHolder ="BruceBanner";
@@ -90,12 +92,12 @@ class Scoreboard
 #endregion
 
 
-    // By using ENHANCED IF STATEMENT  you can shorten the code in just one line.
+ class EnhancedIf 
+ // you can minimise the code by using this method
+     // By using ENHANCED IF STATEMENT  you can shorten the code in just one line.
     // as well as we can use it instead of "if else" condition 
 
     // TERNARY OPERATORS
-
- class EnhancedIf // you can minimise the code by using this method
     {
         public void enhancedStatement(int numberOfPassengers)// passing a value through param
         { 
@@ -110,9 +112,6 @@ class Scoreboard
     }  
 
     
-
-
-
 class NestedIf
 {
   
@@ -152,9 +151,10 @@ class NestedIf
 
 }
 
+
 class Parsing
 {
-    public  string Parseexmp()  // here STATIC will be ignored
+    public string Parseexmp()  // here STATIC will be ignored
     {
         Console.WriteLine("Please enter the value:");
         string myValue= Console.ReadLine();
@@ -173,6 +173,7 @@ class Parsing
     }
 }
 
+
 class Tryparsing
 
 {
@@ -185,9 +186,34 @@ class Tryparsing
         Console.WriteLine(success);
     }
 
+
+    public void challengeCode()
+    {
+        string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+
+float total = 0f;
+string message = "";
+
+foreach (var value in values)
+{
+    float number;
+    if (float.TryParse(value, out number))
+    {
+        total += number;
+    } else
+    {
+        message += value;
+    }
+}
+
+Console.WriteLine($"Message: {message}");
+Console.WriteLine($"Total: {total}");
+    }
+
 }
 
 // Incluidng SWITCH statements
+
 
 
 

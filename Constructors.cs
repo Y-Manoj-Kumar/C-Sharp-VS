@@ -2,14 +2,32 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 
+/*
+ ==>Constructor is a special method,responsible for initialising the variables of a class.
+ ==>Every class reqired a constructor for creating the instance
+ ==>Implict constructors(parameter less/default constructor) = defined by Compiler
+ ==>Expilict constructors = defined by user
 
-// CONSTRUCTORS
+==>Types of Constructors
+
+#Default or parameterless constructor [Wihtout parameters]
+#Parameterized Constructor [With parameters]
+#Copy Constructor 
+#Static Constructor (calls implicitly) [Even thogh it's a static construtor it contains Default Constructor by compiler]
+==>If a class contains any static variables then only implicit static constructors(need no to be called) will be defined orelse
+defined by explicitly)(non-static constructors must be called)
+==>Can't pass values as parameters 
+
+
+
+*/
+// CONSTRUCTORS(Defining and Calling)
 
 #region Constructors
 class Gadgets
 {
 
-    // essential variables
+    // essential variables [Fields]
     private string laptop;
     private string mobile;
     private string ps;
@@ -17,12 +35,12 @@ class Gadgets
 
     // Creating Constuctors 
 
-    public Gadgets() // have to ignore VOID
+    public Gadgets()  //Default Constructor 
     {
         Console.WriteLine("Ooooops! go get some gadgets ");
     }
 
-    public Gadgets(string laptop,string mobile,string ps,string headPhones)
+    public Gadgets(string laptop,string mobile,string ps,string headPhones)//Parametrized Construcutor
     {
         this.laptop = laptop;
         this.mobile = mobile;
@@ -51,25 +69,25 @@ class Gadgets
         
     }
 
-    // we need a method for 
+    // we need a method 
 
     public void thingsIHave() // here we need to confirm that, input value need not be equal to  NULL.
     { 
         if(laptop != null && mobile != null && ps != null && headPhones != null)
         {
-            Console.WriteLine("I have {0}LapTop {1}Mobile {2}PlayStation {3}HeadPhones",laptop,mobile,ps,headPhones);
+            Console.WriteLine("I have {0} {1}  {2}  {3} ",laptop,mobile,ps,headPhones);
         }
         else if(laptop != null && mobile != null && ps != null)
         {
-               Console.WriteLine("I have {0}LapTop{1}Mobile{2}PlayStation",laptop,mobile,ps);
+               Console.WriteLine("I have {0} {1} {2} ",laptop,mobile,ps);
         }
          else if(laptop != null && mobile != null  )
         {
-               Console.WriteLine("I have {0}LapTop{1}Mobile",laptop,mobile );
+               Console.WriteLine("I have {0} {1} ",laptop,mobile );
         }
          else if(laptop != null    )
         {
-               Console.WriteLine("I have {0}LapTop ",laptop );
+               Console.WriteLine("I have {0}  ",laptop );
         }
          
     }
@@ -79,6 +97,7 @@ class Gadgets
 #endregion 
 
 
+#region  properties
 
 class GetSet
 {
@@ -132,8 +151,13 @@ class GetSet
         ,length,breadth,Height,volume = length*breadth*Height);
     }
 
-  
 }
+
+
+#endregion
+
+ 
+ #region Collecting data by Constructors
 
  
  class CollectingData
@@ -170,5 +194,74 @@ class GetSet
          salary = 500000;
      }
 
-
  }
+
+ #endregion
+
+
+#region non-static constructor
+
+        // ConDemo check = new ConDemo(12);
+        // ConDemo check2 = new ConDemo(check);
+        //check.display;
+
+class ConDemo // non-static constructor
+{
+ int q; //[non-static field]
+ public ConDemo(int q)
+ {
+     this.q/* Class variable */ =q;
+ }
+
+ public ConDemo(ConDemo obj) // Copy Constructor
+ {
+     q = obj.q;
+ }
+
+ public void display()
+ {
+     Console.WriteLine("Value of q:" + q);
+ }
+ 
+}
+
+#endregion
+
+
+#region static constructor
+
+ class StaticCon //Static Constructors are implicitly called
+ {
+     static int q =12; //static field
+     int w =32;
+    // static StaticCon()
+    // {
+    //    Console.WriteLine("Static Constructor is called");// static constructor executes first
+    // } 
+
+    // public StaticCon()
+    // {
+    //     Console.Write("non-static constructot is called");//we can also called instance constructor
+    // }
+
+    // public void display()
+    // {
+    //     Console.WriteLine("Static field declared value:"+q);
+    // }
+
+    static void Main( )
+    {
+        // Console.WriteLine("Main method executes");
+        StaticCon con = new StaticCon();
+        Console.WriteLine("non-static field:"+con.w);
+        Console.WriteLine("static field:"+q);
+        
+    }
+ }
+
+#endregion
+
+
+
+
+

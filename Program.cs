@@ -7,15 +7,18 @@ namespace C_Sharp
 {
     class Program
     {
-            // A Class is BLUEPRINT of an Object 
-        static void Main(string[] args)
-        {
+            // A Class is BLUEPRINT of an Object    
+        // static void Main(string[] args)
+        // {
+            // Gadgets things = new Gadgets("laptop","headphones","mobile");
+            // things.thingsIHave();
 
-            Problems prob = new Problems();
-            // prob.IsPresentInArray(x:a,y:b);
+            // StaticCon con = new StaticCon();
+            // Console.WriteLine("Main method exectes first");
+            // con.display();
+            
              
-
-        }     
+        // }
                    
     }
 }
