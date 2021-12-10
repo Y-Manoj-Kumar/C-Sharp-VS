@@ -7,7 +7,11 @@ namespace C_Sharp
 {
     class Program
     {
-            // A Class is BLUEPRINT of an Object    
+
+        // A Class is BLUEPRINT of an Object    
+        //For every class default parent class is OBJECT CLASS
+
+
         // static void Main(string[] args)
         // {
             // Gadgets things = new Gadgets("laptop","headphones","mobile");

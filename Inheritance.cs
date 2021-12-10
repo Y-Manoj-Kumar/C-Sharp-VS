@@ -5,6 +5,24 @@ using System.Collections.Generic;
     Inheritance is a process in which one object acquires all the properties and
     behaviors of its parent object automatically. In such way, you can reuse, extend or modify 
     the attributes and behaviors which is defined in other class.
+
+==>Default parent class for .NET is  "OBJECT CLASS OF SYSTEM NAMESPACE".
+==> Parent class constructor must be accessible to child class,otherwise inherirance will not work
+==> Parent class can't acces variables in child 
+==>But Child class can access variables in Parent class
+==>When we create an instance there is memory allocarion for that particular instan
+==>Memory allocation only done for instances not for referrences
+
+-------------------Types of Inheritance-------------------
+1.Single
+2.Multi-level
+3.Hierarchcal [combination of 1&2]
+4.Hybrid
+5.Multiple
+
+-----------------Simply Defined in Two Types-----------------
+    #If a class has 1 Immediate Parent class  we call it as SINGLE Inheritance.
+    #If a class has more than 1 Immediate Parent class we call it as MULTIPLE Inheritance.
 */
 
     #region  Electrical Device // It's a parent, TV and WateraHeater are it's childrens 
@@ -160,12 +178,79 @@ using System.Collections.Generic;
     #endregion
 
 
+   #region Inheritance Explanation 
+   
+   class College // Parent Class
+
+   {
+       public College() // always need to keep constructor in  public mode orelse it cause error
+       {
+           Console.WriteLine("Main Class Constructor");
+       }
+
+       public void staff()
+       {
+           Console.WriteLine("Hii Iam a Staff from parent class");
+       }
+
+       public void  hod ()
+       {
+           Console.WriteLine("Hii Iam  hod from parent class");
+       }
+   }
+
+
+   class Students : College //Child Class
+   {
+       public void sec()
+       {
+           Console.WriteLine("Hey Iam student from Child Class");
+       }
+       static void Main()
+       {
+           College p1;   //it's a  Parent class variabel,but not initialised 
+           Students p2 = new Students();   // new keyword is used for initialising and it's a Inastance
+           p1=p2;   //p1[Parent class] is initialised using p2[Child Class] instance
+           // Here "P1" is a reference of parent class created by using child class instance
+           // So that refrence will be consuming the memory of child class instance
+           // Even though parent class can't access the child class variables
+           // p1 = new  College(); we can initialise like this too
+
+           p1. hod();
+           p1.staff();
+           p2.sec();
+           p2.hod();
+
+           object obj = new Object();
+
+           Console.WriteLine("Type of p1 is:"+p1.Equals(p2)) ;
+            /*
+            EQUALS
+            GETHASHCODE
+            TOSTRING
+            GETTYPE
+            */
+
+        //    obj.GetType();          
+
+       }
+   }
+
+   #endregion
+
+
+    #region 
+
+
+
+    #endregion
 
 
 
 
 
-    
+
+
 
 
 

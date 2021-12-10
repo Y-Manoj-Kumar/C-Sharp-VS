@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 
 /*
+ ==>EVERY CLASS CONTAINS AN IMPLICIT CONSTRUCTOR[public accessible] IF NOT DEFINED EXPLICITLY
  ==>Constructor is a special method,responsible for initialising the variables of a class.
  ==>Every class reqired a constructor for creating the instance
  ==>Implict constructors(parameter less/default constructor) = defined by Compiler
@@ -249,14 +250,14 @@ class ConDemo // non-static constructor
     //     Console.WriteLine("Static field declared value:"+q);
     // }
 
-    static void Main( )
-    {
-        // Console.WriteLine("Main method executes");
-        StaticCon con = new StaticCon();
-        Console.WriteLine("non-static field:"+con.w);
-        Console.WriteLine("static field:"+q);
+    // static void Main( )
+    // {
+    //     // Console.WriteLine("Main method executes");
+    //     StaticCon con = new StaticCon();
+    //     Console.WriteLine("non-static field:"+con.w);
+    //     Console.WriteLine("static field:"+q);
         
-    }
+    // }
  }
 
 #endregion
