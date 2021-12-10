@@ -2,6 +2,9 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 /*
+
+                       ----STRENGTH OF OOPS LANGAGE IS REAUSABILITY -----
+
     Inheritance is a process in which one object acquires all the properties and
     behaviors of its parent object automatically. In such way, you can reuse, extend or modify 
     the attributes and behaviors which is defined in other class.
@@ -185,7 +188,7 @@ using System.Collections.Generic;
    {
        public College() // always need to keep constructor in  public mode orelse it cause error
        {
-           Console.WriteLine("Main Class Constructor");
+           Console.WriteLine("Iam from Parent  Class Constructor");
        }
 
        public void staff()
@@ -202,28 +205,32 @@ using System.Collections.Generic;
 
    class Students : College //Child Class
    {
+       public Students()
+       {
+           Console.WriteLine("Iam from child class constructor");
+       }
        public void sec()
        {
            Console.WriteLine("Hey Iam student from Child Class");
        }
-       static void Main()
-       {
-           College p1;   //it's a  Parent class variabel,but not initialised 
+    //    static void Main()
+    //    {
+        //    College p1;   //it's a  Parent class variabel,but not initialised 
            Students p2 = new Students();   // new keyword is used for initialising and it's a Inastance
-           p1=p2;   //p1[Parent class] is initialised using p2[Child Class] instance
+        //    p1=p2;   //p1[Parent class] is initialised using p2[Child Class] instance
            // Here "P1" is a reference of parent class created by using child class instance
            // So that refrence will be consuming the memory of child class instance
            // Even though parent class can't access the child class variables
            // p1 = new  College(); we can initialise like this too
 
-           p1. hod();
-           p1.staff();
-           p2.sec();
-           p2.hod();
+        //    p1. hod();
+        //    p1.staff();
+        //    p2.sec();
+        //    p2.hod();
 
-           object obj = new Object();
+        //    object obj = new Object();
 
-           Console.WriteLine("Type of p1 is:"+p1.Equals(p2)) ;
+        //    Console.WriteLine("Type of p1 is:"+p1.Equals(p2)) ;
             /*
             EQUALS
             GETHASHCODE
@@ -233,17 +240,62 @@ using System.Collections.Generic;
 
         //    obj.GetType();          
 
-       }
+    //    }
    }
 
    #endregion
 
 
-    #region 
+    #region  Parameterised 
+
+    class Bus
+    {
+
+        public Bus(int q)
+        {
+            Console.WriteLine("Iam a constructor from Bus Class" + q);
+        }
+        public void display()
+        {
+            Console.WriteLine("Iam a method from Bus class");
+        }
+
+    }
+
+    class Passenger :Bus
+    {
+        public Passenger() : base(1233) 
+        {
+            Console.WriteLine("Iam a constructor from Passenger class");
+        }
+        public void display()
+        {
+            Console.WriteLine("Iam a method from Passenger Class");
+        }
 
 
+        static void Main()
+        {
+            Passenger p = new Passenger(); 
+
+            // In these case BusCon exectes first and then PassengerCon class executes
+            // That too possible only when BusCon and PassengerCon is parameterless
+            // If BusCon is parametarised then have to add BusCon at PassengerCon using "base()";
+            
+
+        }
+    }
 
     #endregion
+
+
+
+
+
+
+
+
+
 
 
 
