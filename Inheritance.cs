@@ -10,10 +10,10 @@ using System.Collections.Generic;
     the attributes and behaviors which is defined in other class.
 
 ==>Default parent class for .NET is  "OBJECT CLASS OF SYSTEM NAMESPACE".
-==> Parent class constructor must be accessible to child class,otherwise inherirance will not work
-==> Parent class can't acces variables in child 
+==> Parent class constructor must be accessible to child class,otherwise inheritance will not work
+==> Parent class can't acces variables in child class
 ==>But Child class can access variables in Parent class
-==>When we create an instance there is memory allocarion for that particular instan
+==>When we create an instance there is memory allocation for that particular instance
 ==>Memory allocation only done for instances not for referrences
 
 -------------------Types of Inheritance-------------------
@@ -216,7 +216,7 @@ using System.Collections.Generic;
     //    static void Main()
     //    {
         //    College p1;   //it's a  Parent class variabel,but not initialised 
-           Students p2 = new Students();   // new keyword is used for initialising and it's a Inastance
+        //    Students p2 = new Students();   // new keyword is used for initialising and it's a Inastance
         //    p1=p2;   //p1[Parent class] is initialised using p2[Child Class] instance
            // Here "P1" is a reference of parent class created by using child class instance
            // So that refrence will be consuming the memory of child class instance
@@ -248,43 +248,43 @@ using System.Collections.Generic;
 
     #region  Parameterised 
 
-    class Bus
-    {
+    // class Bus
+    // {
 
-        public Bus(int q)
-        {
-            Console.WriteLine("Iam a constructor from Bus Class" + q);
-        }
-        public void display()
-        {
-            Console.WriteLine("Iam a method from Bus class");
-        }
+    //     public Bus(int q)
+    //     {
+    //         Console.WriteLine("Iam a constructor from Bus Class" + q);
+    //     }
+    //     public void display()
+    //     {
+    //         Console.WriteLine("Iam a method from Bus class");
+    //     }
 
-    }
+    // }
 
-    class Passenger :Bus
-    {
-        public Passenger() : base(1233) 
-        {
-            Console.WriteLine("Iam a constructor from Passenger class");
-        }
-        public void display()
-        {
-            Console.WriteLine("Iam a method from Passenger Class");
-        }
+    // class Passenger :Bus
+    // {
+    //     public Passenger() : base(1233) 
+    //     {
+    //         Console.WriteLine("Iam a constructor from Passenger class");
+    //     }
+    //     public void display()
+    //     {
+    //         Console.WriteLine("Iam a method from Passenger Class");
+    //     }
 
 
-        static void Main()
-        {
-            Passenger p = new Passenger(); 
+        // static void Main()
+        // {
+        //     Passenger p = new Passenger(); 
 
             // In these case BusCon exectes first and then PassengerCon class executes
             // That too possible only when BusCon and PassengerCon is parameterless
             // If BusCon is parametarised then have to add BusCon at PassengerCon using "base()";
             
 
-        }
-    }
+        // }
+    // }
 
     #endregion
 

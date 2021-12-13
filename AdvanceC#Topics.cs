@@ -38,8 +38,8 @@ using System.Linq;
         enum Months{Jan =1,Feb,Mar,Apr,May,Jun,Jul,AugSep,Oct,Nov,Dec}; // We can re assign the index
 
         Months one = Months.Jan;
-        Months two = Months.Feb;
-        Months three = Months.Mar;
+        // Months two = Months.Feb;
+        // Months three = Months.Mar;
 
         public void enums()
         {
@@ -113,11 +113,11 @@ class Nullables
 
     public void nullables()
     {
-        int? num1 = null;
+        // int? num1 = null;
         // int num2 = null;  This not gonna work in  case of nullable
 
-        double? doubNum1 = 23.4;
-        double? doubNum2 = new double? ();
+        // double? doubNum1 = 23.4;
+        // double? doubNum2 = new double? ();
 
         
 

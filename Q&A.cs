@@ -241,7 +241,37 @@ public void orderIdstartsWithB()
     #endregion
 
 
- 
+    #region pick the word out from the string
+
+    public void pickOut()
+    {
+        string str = "Hey I am from paris";
+        
+        Console.WriteLine(str.Substring(15));
+        Console.WriteLine(str.Substring(9,7));
+
+    }
+
+    #endregion
+
+
+    #region 
+
+
+
+    public  void add()
+    {
+        int q = 12;
+    int w = 23;
+
+    int e = q+w;
+
+    Console.WriteLine(e);
+
+    
+    }
+
+    #endregion
 
 
 }

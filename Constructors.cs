@@ -158,7 +158,7 @@ class GetSet
 #endregion
 
  
- #region Collecting data by Constructors
+ #region Collecting data by Constructors fav logic
 
  
  class CollectingData
@@ -166,7 +166,7 @@ class GetSet
      private string name;
      private string jobtitle;
      private int age;
-     private int salary;
+    //  private int salary;
 
 
      public void information(bool isfriend)
@@ -192,7 +192,7 @@ class GetSet
          name = "Martin";
          age = 43;
          jobtitle = "MediaMOnks";
-         salary = 500000;
+        //  salary = 500000;
      }
 
  }
@@ -234,21 +234,21 @@ class ConDemo // non-static constructor
  class StaticCon //Static Constructors are implicitly called
  {
      static int q =12; //static field
-     int w =32;
-    // static StaticCon()
-    // {
-    //    Console.WriteLine("Static Constructor is called");// static constructor executes first
-    // } 
+    //  int w =32;
+    static StaticCon()
+    {
+       Console.WriteLine("Static Constructor is called");// static constructor executes first
+    } 
 
-    // public StaticCon()
-    // {
-    //     Console.Write("non-static constructot is called");//we can also called instance constructor
-    // }
+    public StaticCon()
+    {
+        Console.Write("non-static constructot is called");//we can also called instance constructor
+    }
 
-    // public void display()
-    // {
-    //     Console.WriteLine("Static field declared value:"+q);
-    // }
+    public void display()
+    {
+        Console.WriteLine("Static field declared value:"+q);
+    }
 
     // static void Main( )
     // {

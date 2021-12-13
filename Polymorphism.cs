@@ -9,6 +9,26 @@ at the same time can have different characteristic. Like a man at the same time 
 an employee.
 */
 
+/*
+OVERLOADING:
+    *In this case we can define multiple methods with the SAME NAME but DIFFERENT PARAMETERS
+    *This can be perform either within a class as well as between parent child classes.
+
+OVERRIDING:
+    *In this case we can define multiple methods with the SAME NAME and PARAMETERS TOO.
+    *This can be performed only between the parent child classes ,never be performed within the same class.
+
+VIRTUAL:
+    *Any virtual method of the parent class can be overridden by the child class if reqired by using the override
+     modifier.
+
+METHOD OVERRIDING:
+    *In this case Child class re-implements it's Parent class method which are declared as Virtual.
+
+Method Hiding/Shadowing:
+    *In this case Child class can re-implement's the any Parent's method  even if the method is not
+     declared as Virtual.
+*/
 
 //  VIRTUAL,OVERRIDE,SEALED,ABSTRACT
 
@@ -22,7 +42,7 @@ an employee.
 
         public bool  Taste { get; set; }
 
-        //  simle constructor
+        //  simple constructor
         public IceCream(string flavour,bool taste)
         {
             this.Flavour = flavour;
@@ -35,7 +55,12 @@ an employee.
         //     Taste = true;
         // }
 
-        public virtual void cost()
+        public void iceCreamShop()
+        {
+            Console.WriteLine("Natural's");
+        }
+
+        public virtual void cost() // Overridable
         {
             if (Taste == true)
             {
@@ -51,7 +76,6 @@ an employee.
     }
 
 
-
     class ConeIceCream : IceCream // Its a SUB CLASS    
     {
 
@@ -60,10 +84,17 @@ an employee.
 
         }
 
-        public override void cost()
+        public override void cost() // Overriding
         {
             base.cost();
         }
+
+        public new void iceCreamShop()
+        {
+            Console.WriteLine("POLAS Iam from child class");
+        }
+
+
 
     }
 

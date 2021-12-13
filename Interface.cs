@@ -4,23 +4,32 @@ using System.Collections.Generic;
 
 // In case of using interface use "I" before a respective name
 
-// class Interface : IEquatable<GameFinishTime>
-// {
+/*
+-->Interface is an user-defined data type only. 
+-->A method without method body is Abstract method.
 
-//     public int GameFinishTime { get; set; }
+*/
 
-//     public Interface(int gamefinishtime)
-//     {
-//         GameFinishTime = gamefinishtime;
-//     }
+/*
+class Interface : IEquatable<GameFinishTime>
+{
 
-//     public bool  equals(GameFinishTime other)
-//     {
-//         return this.GameFinishTime == other.GameFinishTime ;
-//     }
+    public int GameFinishTime { get; set; }
+
+    public Interface(int gamefinishtime)
+    {
+        GameFinishTime = gamefinishtime;
+    }
+
+    public bool  equals(GameFinishTime other)
+    {
+        return this.GameFinishTime == other.GameFinishTime ;
+    }
 
 
-// }
+}
+*/
+
 
 #region  InheritanceDemo
 

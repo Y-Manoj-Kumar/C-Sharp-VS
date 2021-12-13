@@ -12,17 +12,19 @@ namespace C_Sharp
         //For every class default parent class is OBJECT CLASS
 
 
-        // static void Main(string[] args)
-        // {
-            // Gadgets things = new Gadgets("laptop","headphones","mobile");
-            // things.thingsIHave();
 
-            // StaticCon con = new StaticCon();
-            // Console.WriteLine("Main method exectes first");
-            // con.display();
-            
-             
-        // }
+        static void Main ()
+        {
+            // ConeIceCream ice = new ConeIceCream("Chocolate",true);
+            // ice.cost();
+            // ice.iceCreamShop();
+
+
+            Problems prob = new Problems();
+            prob.add();
+
+        }
+
                    
     }
 }
