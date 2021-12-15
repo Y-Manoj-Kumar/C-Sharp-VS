@@ -28,8 +28,6 @@ using System.Linq;
 
     }
 
-
-
     //  An enum is a special "class" that represents a group of constants
 
     class Enum
@@ -50,7 +48,6 @@ using System.Linq;
     }
 
 
-
     class Math
     {
 
@@ -64,7 +61,6 @@ using System.Linq;
 
         }
     }
-
 
 
     class RandomDemo

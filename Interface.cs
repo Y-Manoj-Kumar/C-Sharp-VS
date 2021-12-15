@@ -5,8 +5,15 @@ using System.Collections.Generic;
 // In case of using interface use "I" before a respective name
 
 /*
+-->Class contains only non-abstract methods
+-->Where as Abstract class contains  Abstract methods and non-abstract methods[Methods with method body]
+-->#INTERFACE Contains only Abstract methods[Methods without method body]
 -->Interface is an user-defined data type only. 
--->A method without method body is Abstract method.
+-->Generally a class inherits form other class to consume the members of its parent,where as in INTERFACE 
+   it implements the members of its parent.
+-->A class can Inherits from a Class and Interface at a time.
+-->#The default scope of Interface is Public whereas it is private in Class
+-->#BY default every member  of an interface is abstract so we don't require to use abstract modifier.
 
 */
 
@@ -95,19 +102,43 @@ namespace InheritanceDemo
 #endregion
 
 
-
 #region  IEnumerable and IEnumerator
 
 // IEnumerable<T> contains a single method you just implement when implemening this interface
 
-
-
-
-
-
 #endregion
 
 
+#region 
 
+ interface IInterface1
+ {
+    //  int w;// Interfaces cannot contains fields[variables].
+    //If require an interface can inherits from another interface.
+     void add(int q ,int w); // by default it set to be  in public and it also add abstract modifier to it
+ }
+
+ interface IInterface2 : IInterface1
+ {
+     void sub(int q,int w);
+ }
+
+//  class ImplementationClass : IInterface2
+//  {
+//      public void add(int q,int w);
+//      {
+          
+//      }
+//      public void sub(int q , int w);
+//      {
+//          Console.WriteLine(a - b);
+//      }
+        
+//     declare insance of implementat....ss
+//    and input some values
+//  }
+ 
+
+#endregion
 
 

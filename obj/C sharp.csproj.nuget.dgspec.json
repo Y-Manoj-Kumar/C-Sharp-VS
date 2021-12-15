@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GITHUB REPO\\C-Sharp-VS\\C sharp.csproj": {}
+    "D:\\GITHUB REPO\\C-Sharp-VSCode\\C sharp.csproj": {}
   },
   "projects": {
-    "D:\\GITHUB REPO\\C-Sharp-VS\\C sharp.csproj": {
+    "D:\\GITHUB REPO\\C-Sharp-VSCode\\C sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GITHUB REPO\\C-Sharp-VS\\C sharp.csproj",
+        "projectUniqueName": "D:\\GITHUB REPO\\C-Sharp-VSCode\\C sharp.csproj",
         "projectName": "C sharp",
-        "projectPath": "D:\\GITHUB REPO\\C-Sharp-VS\\C sharp.csproj",
+        "projectPath": "D:\\GITHUB REPO\\C-Sharp-VSCode\\C sharp.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "D:\\GITHUB REPO\\C-Sharp-VS\\obj\\",
+        "outputPath": "D:\\GITHUB REPO\\C-Sharp-VSCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
