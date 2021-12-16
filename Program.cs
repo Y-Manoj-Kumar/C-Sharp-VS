@@ -20,13 +20,17 @@ namespace C_Sharp
             // ice.cost();
             // ice.iceCreamShop();
 
-            Student pro = new Student(86362,"Harry",89765886,"Harry@gmail.com");
+            // Student pro = new Student(86362,"Harry",89765886,"Harry@gmail.com");
             // int _val = pro.val; //assigning the initialising value to the value to be set
             // pro.val = 4; // setting a new value
             // pro.StuId=6722726;
             // Console.WriteLine(pro.StuId);
  
-            Console.WriteLine(pro.Stuid = 875);
+            // Console.WriteLine(pro.Stuid = 875);
+
+
+            Problems questions83 = new Problems();
+            questions83.celciusTOFarenheit();
  
 
         }

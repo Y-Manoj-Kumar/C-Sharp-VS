@@ -255,23 +255,179 @@ public void orderIdstartsWithB()
     #endregion
 
 
+ 
+    #region  Toll CalculatorDemo
+
+    /*
+        Calculate Toll prices according to the vehicel ,number of passengers in vehicel 
+
+        Logic to write program
+
+        I want to make the program using userinput method
+        all this code done by using conditoinal statements 
+
+    */
+
+        // public int passengersTravelling;
+    public void calculatingToll()
+    {
+         
+        Console.WriteLine("Enter your vehicel from below list");   
+        // Console.WriteLine("1.Car 2.Lorry");
+        // string vehicle = Console.ReadLine();
+        
+        List<string> vehicle = new List<string>
+        {
+            {"1.CAR"},{"2.LORRY"},{"3.LORRY WITH 12 TIRES"}
+        };
+
+        foreach (var item in vehicle)
+        {
+            Console.WriteLine(item);
+        }
+
+        string vehicle1= Console.ReadLine();
+
+//CAR 
+        if (vehicle1.ToLower().Equals("car")) // ignoring case sensetive
+        {
+            Console.WriteLine("How many passengers are travelling?");
+            string passengersTravelling = Console.ReadLine();
+            int passengers =int.Parse(passengersTravelling);
+           
+            if (passengers <= 4)
+            {
+                Console.WriteLine("you have to pay 100Rs/-");
+            }
+            else if (passengers > 4)
+            {
+                Console.WriteLine("you have to pay 200/-");
+            }
+        }
+
+//LORRY 
+        if (vehicle1.ToLower().Equals("lorry")) // ignoring case sensetive
+        {
+            Console.WriteLine("overloaded yes or no");
+            string passengersTravelling = Console.ReadLine();
+            // int passengers =int.Parse(passengersTravelling);
+           
+            if (passengersTravelling.Equals("yes"))
+            {
+                Console.WriteLine("you have to pay 1000Rs/-");
+            }
+            else if(passengersTravelling.Equals("no"))
+            {
+                 Console.WriteLine("you have to pay 500");
+            }
+        }
+        if(vehicle1.Equals(""))
+        {
+            Console.WriteLine("Please  enter your vehicle type ");
+            
+        }
+
+    }
+    
+    #endregion
+
+
+    #region login through user id and password
+
+    public void login()
+    {
+
+        Console.WriteLine("Please enter your user Id");
+        string userId = Console.ReadLine();
+        int Id = int.Parse(userId);
+
+        int[] idDataBase = {123,456,789};
+
+        if (Id.Equals(idDataBase))
+        {
+            Console.WriteLine("Enter your passsword");
+        }
+        else
+        {
+            Console.WriteLine("Please enter correct user id");
+        }
+      
+
+    }
+
+
+    #endregion
+
+
+    #region Area of a rectangle     "1"
+
+    public void rectangleArea()
+    {
+        int len = 8;
+        int bre = 4;
+        int area = len*bre;
+        Console.WriteLine("Area of rectangle:" +area);
+    }
+
+    #endregion
+
+
+    #region  Finding ASCII value of character      "2"
+    //ASCII[American Standard Code for Information Interchange]
+    public void ascii()
+    {
+        string str = "qwerty";
+
+    foreach (var item in str)
+    {
+        Console.WriteLine((int)item);
+
+    }
+
+    }
+
+    #endregion
+    
+
+    #region Converting Celcius to Farenheits       "3"
+
+        int farenheits;
+        int degrees;
+    public void celciusTOFarenheit()
+    {
+ 
+        Console.WriteLine("Enter the celcius you want to change to farenheit");
+        String celcius = Console.ReadLine();
+        // int degrees = int.Parse(celcius);
+        int temp;
+        if ( int.TryParse(celcius,out temp))// By using tryparse method we can't get error incase the input is
+                                            // other than integer
+        {
+            if (temp >=0 && temp <=100)
+            {
+                Console.WriteLine( "Farenheit temperature:"+ ((temp*9/5)+32));
+            }
+        }
+        else
+        {
+            Console.WriteLine("Please enter  value from 1 to 100");
+        }
+
+
+        
+    }
+
+    #endregion
+
+
     #region 
 
 
 
-    public  void add()
-    {
-        int q = 12;
-    int w = 23;
-
-    int e = q+w;
-
-    Console.WriteLine(e);
-
-    
-    }
-
     #endregion
+
+
+
 
 
 }

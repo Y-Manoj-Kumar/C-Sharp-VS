@@ -43,4 +43,19 @@ class StringManipulation
 
     }
 
+
+        public void str()
+    {
+        string str1 = "This is Denis Panjuta from ukarine";
+
+        // int stringContains = str1.IndexOf("p",StringComparison.CurrentCultureIgnoreCase);
+        // Console.WriteLine(stringContains);
+
+        var replacement =str1.Replace("DeNis","Marry",StringComparison.CurrentCultureIgnoreCase);
+        Console.WriteLine(str1);
+        Console.WriteLine(replacement);
+
+         
+    }
+
 }
