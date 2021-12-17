@@ -507,13 +507,52 @@ public void orderIdstartsWithB()
     // 12,23,54
     public void largestAmongThree(int a,int b,int c)
     {
-        
+        if (a>b && a>c)
+        {
+            Console.WriteLine($"{a} is larger among {a},{b},{c}",a,a,b,c);
+        }
+        else if(b>c && b>a)
+        {
+            Console.WriteLine($"{b} is greater among {a},{b},{c}",b,a,b,c);
+        }
+        else
+        {
+            Console.WriteLine($"{c} is larger among {a},{b},{c}",c,a,b,c);
+        }
     }
 
     #endregion
 
 
+    #region Leap year checking         "8"
 
+    public void leapYearChecking()
+    {
+         Console.WriteLine("Enter a year to be checked if it's a leap year or not");
+         string input = Console.ReadLine();
+         int year;
+         
+         if (int.TryParse(input,out year))
+         {
+             if (((year%4) == 0))
+             {
+                 Console.WriteLine("Yes it is a Leap year");
+             }
+             else
+             {
+                 Console.WriteLine("No it's not a leap year");
+             }
+              
+         }
+
+         else
+         {
+             Console.WriteLine("Please enter a year");
+         }
+    }   
+
+
+    #endregion
 
 
 }

@@ -30,7 +30,7 @@ namespace C_Sharp
 
 
             Problems questions83 = new Problems();
-            questions83.vowelOrConsonent();
+            questions83. leapYearChecking();
  
 
         }
