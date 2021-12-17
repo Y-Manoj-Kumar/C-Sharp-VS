@@ -16,10 +16,7 @@ namespace C_Sharp
 
         static void Main ()
         {
-            // ConeIceCream ice = new ConeIceCream("Chocolate",true);
-            // ice.cost();
-            // ice.iceCreamShop();
-
+ 
             // Student pro = new Student(86362,"Harry",89765886,"Harry@gmail.com");
             // int _val = pro.val; //assigning the initialising value to the value to be set
             // pro.val = 4; // setting a new value
@@ -29,8 +26,15 @@ namespace C_Sharp
             // Console.WriteLine(pro.Stuid = 875);
 
 
-            Problems questions83 = new Problems();
-            questions83. leapYearChecking();
+            // Problems questions83 = new Problems();
+            // questions83._inputNum = -32;
+            // questions83. positiveNegativeChecking();
+
+ 
+ 
+ 
+
+
  
 
         }

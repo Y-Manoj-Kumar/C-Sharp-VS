@@ -555,4 +555,40 @@ public void orderIdstartsWithB()
     #endregion
 
 
+    #region Positive negative checking        "9"
+
+     public int _inputNum; // fro accessing from outside change it to public
+    public int Inputnum
+    {
+         get{ return _inputNum;} 
+         
+         set
+         {
+             if (_inputNum < 0)
+             {
+                _inputNum = -value  ;
+             }
+            //  else
+            //  {
+            //      _inputNum = value;
+            //  }
+
+        ;}         
+    }
+    public void positiveNegativeChecking()
+    {
+     if (_inputNum<0)
+     {
+         Console.WriteLine("It is a negative number");
+     }
+     else
+     {
+         Console.WriteLine("It is a positive number");
+     }
+
+    }
+
+
+
+    #endregion
 }

@@ -26,26 +26,23 @@ class Student
 
     public int Stuid
     { 
-    get
-    { 
-    return _Stuid;
-    }
-    set
-    {
-        if(value < 21)
-        {
-            _Stuid = value;
+        get
+        { 
+            return _Stuid;
         }
-        else 
+        set
         {
-            Console.WriteLine("please enter value below 21 ;)");
+            if(value < 21)
+            {
+                _Stuid = value;
+            }
+            else 
+            {
+                Console.WriteLine("please enter value below 21 ;)");
+            }
+        
         }
-    
-    }
-
- 
 
     }
-
 
 }   

@@ -18,9 +18,6 @@ using System.Collections.Generic;
 ==>If a class contains any static variables then only implicit static constructors(need no to be called) will be defined orelse
 defined by explicitly)(non-static constructors must be called)
 ==>Can't pass values as parameters 
-
-
-
 */
 // CONSTRUCTORS(Defining and Calling)
 
@@ -34,7 +31,7 @@ class Gadgets
     private string ps;
     private string headPhones;
 
-    // Creating Constuctors 
+    //Creating Constuctors 
 
     public Gadgets()  //Default Constructor 
     {
@@ -61,9 +58,7 @@ class Gadgets
     {
         this.laptop = laptop;
         this.mobile = mobile;
-      
     }
-
      public Gadgets(string laptop)
     {
         this.laptop = laptop;
@@ -89,10 +84,8 @@ class Gadgets
          else if(laptop != null    )
         {
                Console.WriteLine("I have {0}  ",laptop );
-        }
-         
+        }   
     }
-
 }
 
 #endregion 
