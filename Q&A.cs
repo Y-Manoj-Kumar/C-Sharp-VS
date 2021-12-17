@@ -255,7 +255,6 @@ public void orderIdstartsWithB()
     #endregion
 
 
- 
     #region  Toll CalculatorDemo
 
     /*
@@ -374,13 +373,14 @@ public void orderIdstartsWithB()
 
     #region  Finding ASCII value of character      "2"
     //ASCII[American Standard Code for Information Interchange]
+    // Basically its an integer
     public void ascii()
     {
         string str = "qwerty";
 
     foreach (var item in str)
     {
-        Console.WriteLine((int)item);
+        Console.WriteLine((int)item);// need to typecast to int 
 
     }
 
@@ -393,13 +393,14 @@ public void orderIdstartsWithB()
 
         int farenheits;
         int degrees;
+        
     public void celciusTOFarenheit()
     {
  
         Console.WriteLine("Enter the celcius you want to change to farenheit");
         String celcius = Console.ReadLine();
-        // int degrees = int.Parse(celcius);
-        int temp;
+        int degrees = int.Parse(celcius);
+ 
         if ( int.TryParse(celcius,out temp))// By using tryparse method we can't get error incase the input is
                                             // other than integer
         {
@@ -413,16 +414,101 @@ public void orderIdstartsWithB()
             Console.WriteLine("Please enter  value from 1 to 100");
         }
 
-
+ 
         
+ 
     }
 
     #endregion
 
 
-    #region 
+    #region swapping variables      "4"
+    int  q= 12;
+    int w = 13;
+    int e;
+    public void swapping()
+    {
+        Console.WriteLine($"Before swapping q is {q} and w is {w}",q,w);
+
+        e =q;
+        q = w;
+        w = e;
+
+        Console.WriteLine($"After swapping q is {q} and w is {w}",q,w );
+    }
+
+    #endregion
 
 
+    #region Checking the number is even or odd      "5"
+
+    public void evneOrOdd()
+    {
+        Console.WriteLine("Enter a number");
+        string num = Console.ReadLine();
+        int temp;
+
+        if (int.TryParse(num,out temp))
+        {
+            if (((temp % 2) == 0))
+            {
+                Console.WriteLine("Yes it is even number");
+            }
+            else
+            {
+                Console.WriteLine("It's an odd number");
+            }
+        }
+
+        else
+        {
+            Console.WriteLine("Please enter valid number");
+        }
+
+
+    }
+
+
+
+    #endregion
+
+
+    #region Check whether a character is vowel or consonant    "6"
+
+    /*
+        Vowels = a e i o u
+        Consonants = other than vowels
+
+        input char it checks whether the input is related to which one 
+
+    */
+
+     public void vowelOrConsonent()
+     {
+         Console.WriteLine("Enter a character");
+         string inputChar = Console.ReadLine();
+
+        //ToLower() = It converts the input char capital to small 
+         if (inputChar.ToLower()== "a"|| inputChar.ToLower()== "e" || inputChar.ToLower()== "i"|| inputChar.ToLower()== "o"|| inputChar.ToLower()== "u")
+         {
+             Console.WriteLine("Its an vowel ");
+         }
+
+         else
+         {
+             Console.WriteLine("Its a consonant");
+         }
+     }
+
+    #endregion
+
+
+    #region Find largest among three numbers             "7"
+    // 12,23,54
+    public void largestAmongThree(int a,int b,int c)
+    {
+        
+    }
 
     #endregion
 
