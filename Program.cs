@@ -26,8 +26,9 @@ namespace C_Sharp
             // Console.WriteLine(pro.Stuid = 875);
 
 
-            // Problems questions83 = new Problems();
-            // questions83._inputNum = -32;
+            Problems questions83 = new Problems();
+             questions83.leapYearChecking();
+            Console.ReadLine();
             // questions83. positiveNegativeChecking();
 
  
