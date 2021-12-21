@@ -172,7 +172,12 @@ class ErrorIdentification
 
 
 #region FizzBuzz
-
+/*
+    if number divisible by 3 print FIZZ
+    if number divisible by 5 pring BUZZ
+    if number divisibel by 3 and 5 print FIZZBUZZ
+    else the number itself print
+*/
 class FizzBuzz
 {
     public void fizzBuzz()
@@ -194,27 +199,6 @@ class FizzBuzz
 #endregion
 
 
-
-#region Looping
-
-    class Looping
-    {
-
-        public void loop()
-        {
-
-            
-
-
-
-        }
-
-
-
-    }
-
-
-
-#endregion
+ 
 
 
