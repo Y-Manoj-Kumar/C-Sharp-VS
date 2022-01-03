@@ -8,7 +8,7 @@ class StringManipulation
         //String Concatination
         int a = 40000000;
         string car= "Benz";
-        Console.WriteLine("its a new model " + car + " which is nearly " + a +"Rs");
+        Console.WriteLine("its a new model " + car + " which is nearly " , a +"Rs");
 
         //String Formatting
         Console.WriteLine("it's a new model{0},which is nearly {1}Rs ", car,a);

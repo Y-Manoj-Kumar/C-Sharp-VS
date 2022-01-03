@@ -26,14 +26,12 @@ namespace C_Sharp
             // Console.WriteLine(pro.Stuid = 875);
 
 
-            // Problems questions83 = new Problems();
-            //  questions83.leapYearChecking();
-            // Console.ReadLine();
+            Problems questions83 = new Problems();
+            questions83.reverseTheWord();            // Console.ReadLine();
             // questions83. positiveNegativeChecking();
 
 
-            FizzBuzz fb= new FizzBuzz();
-            fb.fizzBuzz();
+ 
 
  
  

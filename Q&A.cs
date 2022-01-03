@@ -247,7 +247,7 @@ public void orderIdstartsWithB()
     {
         string str = "Hey I am from paris";
         
-        Console.WriteLine(str.Substring(15));
+        Console.WriteLine(str.Substring(15)); // we are specifying the string what we need
         Console.WriteLine(str.Substring(9,7));
 
     }
@@ -255,7 +255,7 @@ public void orderIdstartsWithB()
     #endregion
 
 
-    #region  Toll CalculatorDemo
+    #region Toll CalculatorDemo
 
     /*
         Calculate Toll prices according to the vehicel ,number of passengers in vehicel 
@@ -371,7 +371,7 @@ public void orderIdstartsWithB()
     #endregion
 
 
-    #region  Finding ASCII value of character      "2"
+    #region Finding ASCII value of character      "2"
     //ASCII[American Standard Code for Information Interchange]
     // Basically its an integer
     public void ascii()
@@ -591,4 +591,167 @@ public void orderIdstartsWithB()
 
 
     #endregion
+
+
+    #region Factorial without uisng function   "10"
+    /*
+    Factorial{int}= it multiplies its preceeding value until the 1
+    10!  = 10*9*8*7*6*5*4*3*2*1
+    we have to observe here 1 is the ending point in every factorial number
+    // */
+    // public void factorialWithoutUsingFunction()
+    // {
+    //     int val = 12;
+    //     // while loop , for loop , foreach loop
+
+    //     while ()
+    //     {
+             
+    //     }
+
+
+
+
+    // }
+
+    #endregion
+
+
+    #region Multiplication by user input
+
+    public void  w3resources()
+    {
+        Console.WriteLine("Enter A value to be multiply");
+        int a = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter B value to be multiply");
+        int b = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter C value to be multiply");
+        int c = Convert.ToInt32(Console.ReadLine());
+
+
+        int result = a*b*c;
+        Console.WriteLine(result);
+
+
+    }
+
+    #endregion
+ 
+
+    #region Changing places in string
+
+    public void changePlaces(string userStr)
+    {
+        if (userStr.Length > 1)
+        {
+            Console.WriteLine(userStr.Substring(userStr.Length - 1) +userStr.Substring(1,userStr.Length-2)+ userStr.Substring(1,0));
+        }
+    }
+ 
+
+
+    #endregion
+
+
+    #region First character added at the front and back
+
+    public void charAdding()
+    {
+        Console.WriteLine("Enter a sentence");
+        string str = Console.ReadLine();
+
+      if ((str.StartsWith(" "))) // " " the space between the quotes represents an empty place in a string
+                                // no issue with extra params
+      {
+        Console.WriteLine("Please avoid space while starting the sentence");
+      }
+      else
+      {
+        var qw = str.Substring(0,1);
+        Console.WriteLine(qw + str + qw);
+      }
+
+    }
+
+    #endregion
+
+
+    #region Pick out the largest word from a sentence
+    
+    // For better understand go for DEBUGGING
+    public void pickTheLargerWord()
+    {
+        string line = "Write a C# Sharp Program to display the following pattern using the alphabet.";
+        string[] words = line.Split(new[] { " " }, StringSplitOptions.None);
+        string word = "";
+        int val = 0; // here the "val" value is getting reset 
+        foreach (String s in words)
+        {
+            if (s.Length > val)
+                {
+                    word = s;
+                    val = s.Length;
+                }
+        }
+                   
+        Console.WriteLine(word);
+    }
+
+
+    #endregion
+
+
+    #region Sum of first 500 prime nums
+
+    // public void sumOfPrimeNums(int q)
+    // {
+    //     // int sum ;
+        
+
+    //     if (!(q.Equals("")))
+    //     {
+    //         if ((q*1 && 1*q) == q)
+    //         {
+                
+    //         }
+
+    //     }
+
+
+
+    // }
+
+    #endregion
+
+
+    #region Reverse the words of a sentence
+
+    public void reverseTheWord()
+    {
+        string str = "Hey this is Manoj";
+        Console.WriteLine("Before replacement of sentence " + str);
+        // str.Replace("Manoj" , "Hey");
+        // str.Replace("Hey", "Manoj");
+
+        Console.WriteLine("After replacement of sentence " +  str.Replace("Hey" , "Manoj") +str.Replace("Manoj", "Hey"));
+    }
+
+    #endregion
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
