@@ -222,7 +222,7 @@ public bool IsPresentInArray(int[] a, int[] b)
     #endregion
 
 
-    #region reverse the string in its original place
+    #region  Pick the value starts with B
 
 public void orderIdstartsWithB()
 {
@@ -739,6 +739,103 @@ public void orderIdstartsWithB()
     }
 
     #endregion
+
+
+    #region  HexaDecimal to deciaml number
+
+    public void hexaToDecimal()
+    {
+        // 4B9
+        /*
+        input contains alphabets or numbers need to check
+        here calculation need to done from right to left 
+        identify the position nothing but index of the given value
+    foreach loop
+
+
+        */
+
+        string hexval = "4C9";
+ 
+
+        int decval = int.Parse(hexval,System.Globalization.NumberStyles.HexNumber);
+ 
+        Console.WriteLine("HexaDeximal to Decimal number"+decval);
+ 
+    }
+
+
+    #endregion
+
+
+    #region Multiply corresponding elements of two arrays of integers
+
+    public void multipyOfTwoArrays()
+    {
+        int[] arr1 = {12,3,45,56};
+        int[] arr2 = {45,6,65,21};
+
+        for (int i = 0; i<=arr1.Length; i++)
+        {
+   
+        Console.WriteLine("Multiplication of" + (arr1[i]*arr2[i]));
+            
+        }
+
+    }
+
+    #endregion
+
+
+    #region If a string starts with a specified word.
+
+    public void startsWith()
+    {
+        string str = "Yooo wazzup buddy, where are you coming from";
+
+    if (str.StartsWith("Yooo"))
+    {
+        Console.WriteLine("Yes the given sentence starts with Yooo");
+    }
+    // else if (str.Contains(""))
+    // {
+        
+    // }
+    else
+    {
+        Console.WriteLine("Nooooooooooo");
+    }
+        
+    }
+    #endregion
+
+
+    #region If "HP" appears at second position in a string and returns the string without "HP". 
+
+    public void secondPositionHP()
+    {
+        string sentence = "SHP doiffnwo";
+        if (sentence.Substring(1,2).Equals("HP"))
+        {
+            Console.WriteLine(sentence.Remove(1,2) );
+        }
+    }
+
+
+
+    #endregion
+
+
+    #region 
+
+    
+
+    #endregion
+
+
+
+
+
 }
 
 

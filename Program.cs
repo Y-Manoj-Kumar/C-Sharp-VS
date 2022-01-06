@@ -27,18 +27,14 @@ namespace C_Sharp
 
 
             Problems questions83 = new Problems();
-            questions83.reverseTheWord();            // Console.ReadLine();
+            questions83.secondPositionHP();            // Console.ReadLine();
             // questions83. positiveNegativeChecking();
 
 
  
 
  
- 
- 
 
-
- 
 
         }
 
