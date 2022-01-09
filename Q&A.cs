@@ -814,14 +814,46 @@ public void orderIdstartsWithB()
 
     public void secondPositionHP()
     {
-        string sentence = "SHP doiffnwo";
-        if (sentence.Substring(1,2).Equals("HP"))
+        string sentence = "SHw doiffnwo";
+        // if (sentence.Substring(1,2).Equals("HP"))
+        // {
+        //     Console.WriteLine(sentence.Remove(1,2) );
+        // }
+          if (sentence.Substring(0,2).Contains("w"))
         {
-            Console.WriteLine(sentence.Remove(1,2) );
+            Console.WriteLine("Yes I am here");
         }
+        else
+        {
+            Console.WriteLine("No I am not here");
+        }
+ 
     }
 
 
+
+    #endregion
+
+
+    #region  If a given string starts with "w" and immediately followed by two "ww"
+
+    public void startsWithW()
+    {
+        string demoOne = "WWW is a Wheythere worldWideWeb";
+        string[] items = demoOne.Split("");
+
+        foreach (var item in items)
+        {
+            if (item.StartsWith("W"))
+            {
+                
+
+                Console.WriteLine(item);
+            }
+        }
+
+        
+    }
 
     #endregion
 
@@ -831,9 +863,6 @@ public void orderIdstartsWithB()
     
 
     #endregion
-
-
-
 
 
 }
