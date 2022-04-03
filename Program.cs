@@ -26,12 +26,13 @@ namespace C_Sharp
             // Console.WriteLine(pro.Stuid = 875);
 
 
-            Problems questions83 = new Problems();
-            questions83.startsWithW();            // Console.ReadLine();
+            // Problems questions83 = new Problems();
+            // questions83.startsWithW();            // Console.ReadLine();
             // questions83. positiveNegativeChecking();
-
-
  
+
+            ProblemSolving skills = new ProblemSolving();
+            // skills.palindrome();
 
  
 

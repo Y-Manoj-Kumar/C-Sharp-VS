@@ -7,7 +7,7 @@ using System.Collections.Generic;
 class Problems
 {
     
-
+    
     #region ReverseString
 
 /*                                   
@@ -859,7 +859,24 @@ public void orderIdstartsWithB()
 
 
     #region 
+     
+     public async void evenNUm()
+     {
+        Console.WriteLine("Please enter a number between 0 to 99");
+        string needtoConvert=Console.ReadLine();
+        int inputVal = int.Parse(needtoConvert);
+        
 
+        if (inputVal>0 && inputVal<99)
+        {
+        //    for (int i = 0; i < length; i++)
+        //    {
+               
+        //    } 
+
+        }
+          
+     }
     
 
     #endregion

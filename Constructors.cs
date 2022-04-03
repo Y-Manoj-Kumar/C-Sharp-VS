@@ -3,6 +3,10 @@ using System.Linq;
 using System.Collections.Generic;
 
 /*
+    Assume there's a multiple instances for a respective class we already declared a varible so we get same output
+    for all insatances.TO get a different value need to create explicit constructor which is parameterised and we can assign individual 
+    value to the insatances
+
  ==>EVERY CLASS CONTAINS AN IMPLICIT CONSTRUCTOR[public accessible] IF NOT DEFINED EXPLICITLY
  ==>Constructor is a special method,responsible for initialising the variables of a class.
  ==>Every class reqired a constructor for creating the instance
