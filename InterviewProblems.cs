@@ -30,7 +30,7 @@ class ImpProblems
     public static void Main()
     {
         ImpProblems learn = new ImpProblems();
-        learn.FactorialNum();
+        learn.patternProgram();
     }
 
     #region Prime Number
@@ -118,7 +118,7 @@ class ImpProblems
     {
         Console.WriteLine("Enter a number");
         int userInput =Convert.ToInt32(Console.ReadLine());
-        int factorial= 1;
+        long factorial=1;
 
         if (userInput == 0)
         {   
@@ -136,4 +136,47 @@ class ImpProblems
     }
 
     #endregion
+
+
+    #region Pattern Program
+
+    public void patternpenis()
+    {   
+        Console.WriteLine("               *  ");
+        Console.WriteLine("             * * *  ");
+        Console.WriteLine("            * * * *" );
+        Console.WriteLine("            * * * * ");
+        Console.WriteLine("            * * * * ");
+        Console.WriteLine("            * * * * ");
+        Console.WriteLine("            * * * * ");
+        Console.WriteLine("            * * * * ");
+        Console.WriteLine("            * * * *  ");
+        Console.WriteLine("            * * * * ");
+        Console.WriteLine("            * * * *  ");
+        Console.WriteLine("      * * * * * * * * * * ");
+        Console.WriteLine("    * * * * * * * * * * * * ");
+        Console.WriteLine("  * * * * * * * * * * * * * ");
+        Console.WriteLine("  * * * * * *    * * * * * * ");
+        Console.WriteLine("  * * * * * *     * * * * * *");
+        Console.WriteLine("     * * * *        * * * *");
+
+    }
+
+
+    public void patternProgram()
+    {
+
+        
+
+    }
+
+
+    #endregion
+
+
+
+
+
+
+
 }
