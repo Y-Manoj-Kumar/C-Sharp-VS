@@ -14,8 +14,8 @@ namespace C_Sharp
 
 
 
-        static void Main ()
-        {
+        // static void Main ()
+        // {
  
             // Student pro = new Student(86362,"Harry",89765886,"Harry@gmail.com");
             // int _val = pro.val; //assigning the initialising value to the value to be set
@@ -34,13 +34,15 @@ namespace C_Sharp
             // ProblemSolving skills = new ProblemSolving();
             // skills.palindrome(); 
 
-            ImpProblems learn = new ImpProblems();
-            learn.fibonacciSeries();
+        //     ImpProblems learn = new ImpProblems();
+        //     learn.FactorialNum();
+
+ 
 
  
 
 
-        }
+        // }
 
                    
     }

@@ -7,7 +7,7 @@ using System.Configuration;
 1.Prime Number 
 2.Fibonacci Series
 3.Fibonacci series without Recursion
-4.Factorial NUmber Program
+4.Factorial Number Program
 5.Pattern Program(**)
 6.Sum of Digits in a program
 7.Palindrome or not 
@@ -27,6 +27,12 @@ using System.Configuration;
 */
 class ImpProblems
 {
+    public static void Main()
+    {
+        ImpProblems learn = new ImpProblems();
+        learn.FactorialNum();
+    }
+
     #region Prime Number
     /*
     -->We can provide input in many ways like through parameters,userinput,direct value declaring..........
@@ -88,6 +94,46 @@ class ImpProblems
     #endregion
     
 
+    #region Fibonacci series without Recrussion
+
+    /*
+    -->The recursive function or method is a very strong functionality in C#. 
+        A recursive method is a method which calls itself again and again on basis 
+        of few statements which need to be true. Similarly, when a function calls 
+        itself again and again it is known as a recursive function.
+    -->
+    */
+    public void Fibowithoutrecrussion()
+    {
+
+    }
+
+ 
+    #endregion
 
 
+    #region Factorial Number
+
+    public  void FactorialNum()
+    {
+        Console.WriteLine("Enter a number");
+        int userInput =Convert.ToInt32(Console.ReadLine());
+        int factorial= 1;
+
+        if (userInput == 0)
+        {   
+            Console.WriteLine("Factorial of 0 is 1");
+        }
+        else
+        {
+            for (int i = userInput; i >= 1; i--)
+            {
+                factorial = factorial*i;
+            }
+            Console.WriteLine("Factorial of "+userInput+" is " +factorial);
+        }
+
+    }
+
+    #endregion
 }
