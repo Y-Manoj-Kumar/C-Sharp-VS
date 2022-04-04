@@ -191,23 +191,23 @@ class Tryparsing
     {
         string[] values = { "12.3", "45", "ABC", "11", "DEF" };
 
-float total = 0f;
-string message = "";
+        float total = 0f;
+        string message = "";
 
-foreach (var value in values)
-{
-    float number;
-    if (float.TryParse(value, out number))
-    {
-        total += number;
-    } else
-    {
-        message += value;
-    }
-}
+        foreach (var value in values)
+        {
+            float number;
+            if (float.TryParse(value, out number))
+            {
+                total += number;
+            } else
+            {
+                message += value;
+            }
+        }
 
-Console.WriteLine($"Message: {message}");
-Console.WriteLine($"Total: {total}");
+        Console.WriteLine($"Message: {message}");
+        Console.WriteLine($"Total: {total}");
     }
 
 }

@@ -31,8 +31,11 @@ namespace C_Sharp
             // questions83. positiveNegativeChecking();
  
 
-            ProblemSolving skills = new ProblemSolving();
-            // skills.palindrome();
+            // ProblemSolving skills = new ProblemSolving();
+            // skills.palindrome(); 
+
+            ImpProblems learn = new ImpProblems();
+            learn.fibonacciSeries();
 
  
 
