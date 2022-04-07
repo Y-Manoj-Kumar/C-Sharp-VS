@@ -30,7 +30,7 @@ class ImpProblems
     public static void Main()
     {
         ImpProblems learn = new ImpProblems();
-        learn.patternProgram();
+        learn.sumOfDigits();
     }
 
     #region Prime Number
@@ -165,13 +165,118 @@ class ImpProblems
 
     public void patternProgram()
     {
+        /*
+        --> For this we need row and column such i and j respectively
+        --> 
+        */
+        Console.WriteLine("How many rows you want to print ? ");
+        int numValue = Convert.ToInt32(Console.ReadLine());
+        // int startNum = 1;
 
-        
+        for (int i = 0; i < numValue; i++) // Remember there is no equal symbol only lesser than 
+        {
+            for (int j = 0; j < i; j++)
+            {
+                Console.Write("# ");
+            }
+            Console.WriteLine("");
+            // startNum = startNum+1;
+        }
 
     }
 
 
+    public void pyramidPattern()
+    {
+        int spc,len =1;
+        Console.WriteLine("Enter a number");
+        int inputVal = Convert.ToInt32(Console.ReadLine());
+        spc = inputVal-1;
+
+        for (int i = 0; i < inputVal; i++)
+        {
+            for (int j = 0; j < spc; j++)
+            {
+                Console.Write(" ");
+            }
+            for (int k = 0; k < len; k++)
+            {
+                Console.Write("@");
+            }
+            spc--;
+            len=len+2;
+            Console.WriteLine();
+        }
+
+
+
+    }
+
+
+    public void patternSequence()
+    {
+        Console.WriteLine("Enter a number ");
+        int inputNum = Convert.ToInt32(Console.ReadLine());
+        int startNum= 0;
+
+        for (int i = 0; i < inputNum; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                Console.Write(" "+startNum);
+                startNum++;
+            }
+            Console.WriteLine("");
+        }
+
+
+    }
+
+
+    public void stringPattern()
+    {
+        Console.WriteLine("Enter a string ");
+        string str = Console.ReadLine();
+
+        for (int i = 0; i < str.Length; i++)
+        {
+            for (int j = 0; j <=i; j++)
+            {
+                Console.Write(str[j]);
+            }
+            Console.WriteLine();
+        }
+
+    }
+
     #endregion
+
+
+    #region Sum of Digits
+
+    public void sumOfDigits()
+    {
+        Console.WriteLine("Enter a number");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        int sum=0,rem;
+
+        while (num>0)
+        {
+            rem = num%10;
+            sum = sum+rem;
+            num = num/10;
+        }
+
+        Console.WriteLine("Sum of "+num+"is "+sum );
+
+    }
+
+
+
+    #endregion
+
+
 
 
 
