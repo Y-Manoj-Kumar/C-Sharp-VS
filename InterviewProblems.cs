@@ -33,7 +33,7 @@ class ImpProblems
         learn.reversingANumber();
     }
 
-    #region Prime Number
+    #region #1 Prime Number
     /*
     -->We can provide input in many ways like through parameters,userinput,direct value declaring..........
     -->We need to check wether the input is number or not 
@@ -69,7 +69,7 @@ class ImpProblems
     #endregion
 
 
-    #region Fibonacci Series
+    #region #2 Fibonacci Series
 
     /*
     -->Each number is equal to the sum of the preceding two numbers.
@@ -94,7 +94,7 @@ class ImpProblems
     #endregion
     
 
-    #region Fibonacci series without Recrussion
+    #region #3 Fibonacci series without Recrussion
 
     /*
     -->The recursive function or method is a very strong functionality in C#. 
@@ -112,7 +112,7 @@ class ImpProblems
     #endregion
 
 
-    #region Factorial Number
+    #region #4 Factorial Number
 
     public  void FactorialNum()
     {
@@ -138,7 +138,7 @@ class ImpProblems
     #endregion
 
 
-    #region Pattern Program
+    #region #5 Pattern Program
 
     public void patternpenis()
     {   
@@ -252,7 +252,7 @@ class ImpProblems
     #endregion
 
 
-    #region Sum of Digits
+    #region #6 Sum of Digits
     /*
     -->Just finding the sum of given integer
     */
@@ -281,7 +281,7 @@ class ImpProblems
     #endregion
 
 
-    #region Palindrome
+    #region #7 Palindrome
     /*
     -->A palindromic number is a number that remains the same when its digits are reversed. In other words, 
     it has reflectional symmetry across a vertical axis.
@@ -315,7 +315,7 @@ class ImpProblems
     #endregion
 
 
-    #region Leap Year or not
+    #region #8 Leap Year or not
 
     public void leapYearOrNot()
     {
@@ -384,7 +384,7 @@ class ImpProblems
     #endregion
 
 
-    #region Armstrong or Not 
+    #region #9 Armstrong or Not 
     /*
     -->An Armstrong number of three digits is an integer such that the sum of the cubes of its digits 
        is equal to the number itself. For example, 371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371
@@ -420,7 +420,7 @@ class ImpProblems
     #endregion
 
 
-    #region Given number is PERFECT or not
+    #region #10 Given number is PERFECT or not
     //A perfect number is a positive integer that is equal to the sum of its proper divisors
 
     public void givenNumIsPerfectOrNot()
@@ -456,7 +456,7 @@ class ImpProblems
     #endregion
 
 
-    #region Given number is STRONG or not
+    #region #11 Given number is STRONG or not
     /* If sum of factorial of digits is equal to original number then it is Strong number */
 
     public void givenNumIsStrongOrNot()
@@ -490,7 +490,7 @@ class ImpProblems
     #endregion
 
 
-    #region Swapping Varibales without using third variable
+    #region #12 Swapping Varibales without using third variable
 
     int q =12;
     int w = 13;
@@ -521,7 +521,7 @@ class ImpProblems
     #endregion
 
 
-    #region Harshad Number
+    #region #13 Harshad Number
 
     //Harshad number or Niven number is a number which is divisible by the sum of its digits
 
@@ -557,7 +557,7 @@ class ImpProblems
     #endregion
 
 
-    #region Even and Odd number checking
+    #region #14 Even and Odd number checking
 
     public void evenOrOdd()
     {
@@ -581,7 +581,7 @@ class ImpProblems
     #endregion
 
 
-    #region Reversing a number
+    #region #15 Reversing a number
 
     public void reversingANumber()
     {
@@ -605,4 +605,6 @@ class ImpProblems
 
     #endregion
 
+
+    
 }
