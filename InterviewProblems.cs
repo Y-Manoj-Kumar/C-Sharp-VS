@@ -30,7 +30,7 @@ class ImpProblems
     public static void Main()
     {
         ImpProblems learn = new ImpProblems();
-        learn.sumOfDigits();
+        learn.reversingANumber();
     }
 
     #region Prime Number
@@ -118,7 +118,7 @@ class ImpProblems
     {
         Console.WriteLine("Enter a number");
         int userInput =Convert.ToInt32(Console.ReadLine());
-        long factorial=1;
+        int factorialSum = 1;
 
         if (userInput == 0)
         {   
@@ -128,9 +128,9 @@ class ImpProblems
         {
             for (int i = userInput; i >= 1; i--)
             {
-                factorial = factorial*i;
+                factorialSum = factorialSum*i;
             }
-            Console.WriteLine("Factorial of "+userInput+" is " +factorial);
+            Console.WriteLine("Factorial of "+userInput+" is " +factorialSum);
         }
 
     }
@@ -253,13 +253,17 @@ class ImpProblems
 
 
     #region Sum of Digits
+    /*
+    -->Just finding the sum of given integer
+    */
 
     public void sumOfDigits()
     {
-        Console.WriteLine("Enter a number");
+        Console.WriteLine("Enter a number for sum of digits");
         int num = Convert.ToInt32(Console.ReadLine());
 
-        int sum=0,rem;
+        int sum=0,rem,temp;
+        temp=num;
 
         while (num>0)
         {
@@ -268,7 +272,7 @@ class ImpProblems
             num = num/10;
         }
 
-        Console.WriteLine("Sum of "+num+"is "+sum );
+        Console.WriteLine("Sum of "+ temp +" is "+sum );
 
     }
 
@@ -277,11 +281,328 @@ class ImpProblems
     #endregion
 
 
+    #region Palindrome
+    /*
+    -->A palindromic number is a number that remains the same when its digits are reversed. In other words, 
+    it has reflectional symmetry across a vertical axis.
+    */
+
+    public void palindrome()
+    {
+        Console.WriteLine("Enter a number to check whether it is a palindrome or not ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        int temp,rem,revnum=0;
+        temp=num;
+
+        while (num>0)
+        {
+            rem =num%10;
+            revnum =revnum*10+rem;
+            num = num/10;
+        }
+        if (temp==revnum)
+        {
+            Console.WriteLine("It's a palindrome"); 
+        }
+        else
+        {
+            Console.WriteLine("Not a palindrome");
+        }
+        
+    }
+
+    #endregion
+
+
+    #region Leap Year or not
+
+    public void leapYearOrNot()
+    {
+        Console.WriteLine("Enter a year to be check wehtere it's a leap year or not");
+        string yearInput=Console.ReadLine();
+        int year;
+
+        if (int.TryParse(yearInput,out year))
+        {
+            if ((year%4)==0)
+            {
+                Console.WriteLine("It's a leap year");
+            }
+            else
+            {
+                Console.WriteLine("No it's not a lepa year");
+            }
+        }
+
+        else
+        {
+            Console.WriteLine("Please enter a year");
+        }
+
+
+    }
+
+    public void tempPalindrome()
+    {
+
+        Console.WriteLine("Enter a year");
+        string year = (Console.ReadLine());
+        int changedyear;
+
+            // if ((year%4)==0)
+            // {
+            //     Console.WriteLine("It's a leap year");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("No it's not a lepa year");
+            // }
+
+        // while (int.TryParse(year,out changedyear))
+        // {
+
+        //     if ((changedyear%4)==0)
+        //     {
+        //         Console.WriteLine("It's a leap year");
+        //         break;
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("No it's not a lepa year");
+        //         break;
+        //     }
+        // }
+
+
+ 
+
+    }
 
 
 
+    #endregion
+
+
+    #region Armstrong or Not 
+    /*
+    -->An Armstrong number of three digits is an integer such that the sum of the cubes of its digits 
+       is equal to the number itself. For example, 371 is an Armstrong number since 3**3 + 7**3 + 1**3 = 371
+    */
+
+    public void Armstrong()
+    {
+
+        Console.WriteLine("Enter a number");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        int sum=0,rem,temp;
+        temp=num;
+
+        while (num>0)
+        {
+            rem = num%10;
+            sum = sum+rem*rem*rem;
+            num=num/10;
+        }
+
+        if (temp==sum)
+        {
+            Console.WriteLine("It's an armstrong");
+        }
+        else
+        {
+            Console.WriteLine("Not an armstrong");
+        }
+
+    }
+
+    #endregion
+
+
+    #region Given number is PERFECT or not
+    //A perfect number is a positive integer that is equal to the sum of its proper divisors
+
+    public void givenNumIsPerfectOrNot()
+    {
+        Console.WriteLine("Enter a number to check whether it's a perfect number or not");
+        int inputNum = Convert.ToInt32(Console.ReadLine());
+
+        int sum=0;
+        Console.Write("The positive divisors of " + inputNum + " is :   ");
+        for (int i = 1; i < inputNum; i++)
+        {
+            if (inputNum%i==0)
+            {
+                sum = sum+i;
+                 Console.Write( "{0} ",i); // Here use "," (comma) instead of "+".
+            }
+            //  Console.WriteLine("Divisors of " + inputNum + " is " + i);
+        }
+        Console.WriteLine();
+        Console.WriteLine("The sum of positive divisors of " + inputNum + " is " + sum);
+
+        if (inputNum==sum)
+        {
+            Console.WriteLine(inputNum + " is a PERFECT number");
+        }
+        else
+        {
+            Console.WriteLine(inputNum + " is a not a PERFECT number");
+        }
+       
+    }
+
+    #endregion
+
+
+    #region Given number is STRONG or not
+    /* If sum of factorial of digits is equal to original number then it is Strong number */
+
+    public void givenNumIsStrongOrNot()
+    {
+        Console.WriteLine("Enter an number to check whether it is a strong number or not");
+        int inputNum = Convert.ToInt32(Console.ReadLine());
+
+        int n1,s1=0,fact=1;
+        n1=inputNum;
+
+        for (int i = inputNum; i > 0; i = i/10)
+        {
+            for (int j = 1; j <= i%10; j++)
+            {
+                fact = fact*j;
+            }
+            s1 =s1+fact;
+        }
+
+        if (s1==n1)
+        {
+            Console.WriteLine("Its is a STRONG number");   
+        }
+        else
+        {
+            Console.WriteLine("No it's not a STRONG number");
+        }
+
+    }
+
+    #endregion
+
+
+    #region Swapping Varibales without using third variable
+
+    int q =12;
+    int w = 13;
+    int e;
+    public void swpapingVariablesWithoutThirdVariable()
+    {
+        Console.WriteLine("Before swapping variables where q = " + q + " and w = " + w);
+
+        q=q*w;
+        w=q/w;
+        q=q/w;
+
+        Console.WriteLine("After swapping variables where q = " + q + " and w = "+ w);
+    }
+
+    public void swappingVariableWithThirdVariable()
+    {
+        Console.WriteLine("Before swapping variables where q = " + q + " and w = " + w);
+
+        e=q;
+        q=w;
+        w=e;
+
+        Console.WriteLine("After swapping variables where q = " + q + " and w = "+ w);
+        
+    }
+
+    #endregion
+
+
+    #region Harshad Number
+
+    //Harshad number or Niven number is a number which is divisible by the sum of its digits
+
+    public void harshadNumber()
+    {
+        Console.WriteLine("Ente a number to check whether it is a Harshad Number or not");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        int sum=0,rem,temp=num;
+
+        while (num>0)
+        {
+            rem=num%10;
+            sum=sum+rem;
+            num=num/10;// here in each iteration value get reseted
+        }
+
+        Console.WriteLine("Sum of Digits of " + temp + " is "+ sum);
+
+        if((temp%sum) == 0)// Check once numerator value and denominator value
+        {
+            Console.WriteLine("It's a Harshad Number");
+        }
+        else
+        {
+            Console.WriteLine("No it's not a Harshad number");
+        }
+
+
+    }
+
+
+    #endregion
+
+
+    #region Even and Odd number checking
+
+    public void evenOrOdd()
+    {
+        Console.WriteLine("Enter a number to be check whether it is an even or not");
+        int input = Convert.ToInt32(Console.ReadLine());
+
+        if (input%2 == 0)// we need to check reminder
+        {
+            Console.WriteLine("It's an even number");
+        }
+        else
+        {
+            Console.WriteLine("It's an odd number");
+        }
+
+
+    }
 
 
 
+    #endregion
+
+
+    #region Reversing a number
+
+    public void reversingANumber()
+    {
+        Console.WriteLine("Enter a number to be print in reverse");
+        int revnum = Convert.ToInt32(Console.ReadLine());
+
+        int rem,reverse=0,temp;
+        temp=revnum;
+
+        while (revnum != 0)
+        {
+            rem = revnum % 10;
+            reverse = reverse*10+rem;
+            revnum = revnum/10;
+        }    
+
+        Console.WriteLine("Reversed number of " + temp + " is " + reverse);
+
+ 
+    }
+
+    #endregion
 
 }

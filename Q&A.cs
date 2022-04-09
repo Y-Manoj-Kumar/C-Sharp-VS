@@ -34,7 +34,6 @@ class Problems
             Console.Write(chars[i]);    // it prints word together.
         }
 
-
     }
 
                      //METHOD-2 
@@ -220,7 +219,7 @@ public bool IsPresentInArray(int[] a, int[] b)
 }
 
     #endregion
-
+ 
 
     #region  Pick the value starts with B
 
