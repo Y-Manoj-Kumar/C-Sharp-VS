@@ -606,5 +606,10 @@ class ImpProblems
     #endregion
 
 
+    #region Decimal to Binary
+
     
+
+
+    #endregion
 }
