@@ -30,7 +30,7 @@ class ImpProblems
     public static void Main()
     {
         ImpProblems learn = new ImpProblems();
-        learn.reversingANumber();
+        learn.fibonacciSeries();
     }
 
     #region #1 Prime Number
@@ -40,31 +40,33 @@ class ImpProblems
     -->By using "TryParse" we can check whether the input is number or not.
     */
 
-    public void PrimeNumber() // Value passing by parameters
-    {
-      Console.WriteLine("Input a number to be check whether it is a prime number or not ?");
-      string rawInput = Console.ReadLine();
-    //   int userInput = Convert.ToInt32(rawInput);
-      int userInput2;
-    //   bool inputValue = int.TryParse(rawInput,out userInput2);
+
+
+    // public void PrimeNumber() // Value passing by parameters
+    // {
+    //   Console.WriteLine("Input a number to be check whether it is a prime number or not ?");
+    //   int userVal = int.Parse(Console.ReadLine());
+    // //   int userInput = Convert.ToInt32(rawInput);
+    // //   int userInput2;
+    // //   bool inputValue = int.TryParse(rawInput,out userInput2);
       
-        
-      if(int.TryParse(rawInput,out userInput2))
-      {
-        if (userInput2*1 == userInput2 && userInput2%2 == 0) 
-        {
-            Console.WriteLine("Not a Prime number");
-        }
-        else
-        {
-            Console.WriteLine("Prime Number");
-        }
-      }  
-      else
-      {
-        Console.WriteLine("Enter a valid INPUT");
-      }
-    }
+    
+    //     int i; //Declare i as a golbal variable........
+    //     for ( i = 2; i < userVal; i++)
+    //     {
+    //         if (userVal % i ==0)
+    //         {
+    //             Console.WriteLine("{0} is not a prime ",userVal);
+    //             break;
+    //         }
+    //     }
+    //     if (i==userVal)
+         
+    //         Console.WriteLine("{0} is a prime number",userVal);
+    //     }
+
+    // }
+
 
     #endregion
 
@@ -607,6 +609,9 @@ class ImpProblems
 
 
     #region Decimal to Binary
+
+
+
 
     
 
