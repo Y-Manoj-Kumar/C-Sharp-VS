@@ -30,7 +30,7 @@ class ImpProblems
     public static void Main()
     {
         ImpProblems learn = new ImpProblems();
-        learn.fibonacciSeries();
+        // learn.fact();
     }
 
     #region #1 Prime Number
@@ -46,9 +46,9 @@ class ImpProblems
     // {
     //   Console.WriteLine("Input a number to be check whether it is a prime number or not ?");
     //   int userVal = int.Parse(Console.ReadLine());
-    // //   int userInput = Convert.ToInt32(rawInput);
-    // //   int userInput2;
-    // //   bool inputValue = int.TryParse(rawInput,out userInput2);
+    //   int userInput = Convert.ToInt32(rawInput);
+    //   int userInput2;
+    //   bool inputValue = int.TryParse(rawInput,out userInput2);
       
     
     //     int i; //Declare i as a golbal variable........
@@ -67,6 +67,7 @@ class ImpProblems
 
     // }
 
+ 
 
     #endregion
 
@@ -141,28 +142,6 @@ class ImpProblems
 
 
     #region #5 Pattern Program
-
-    public void patternpenis()
-    {   
-        Console.WriteLine("               *  ");
-        Console.WriteLine("             * * *  ");
-        Console.WriteLine("            * * * *" );
-        Console.WriteLine("            * * * * ");
-        Console.WriteLine("            * * * * ");
-        Console.WriteLine("            * * * * ");
-        Console.WriteLine("            * * * * ");
-        Console.WriteLine("            * * * * ");
-        Console.WriteLine("            * * * *  ");
-        Console.WriteLine("            * * * * ");
-        Console.WriteLine("            * * * *  ");
-        Console.WriteLine("      * * * * * * * * * * ");
-        Console.WriteLine("    * * * * * * * * * * * * ");
-        Console.WriteLine("  * * * * * * * * * * * * * ");
-        Console.WriteLine("  * * * * * *    * * * * * * ");
-        Console.WriteLine("  * * * * * *     * * * * * *");
-        Console.WriteLine("     * * * *        * * * *");
-
-    }
 
 
     public void patternProgram()
@@ -609,11 +588,7 @@ class ImpProblems
 
 
     #region Decimal to Binary
-
-
-
-
-    
+  
 
 
     #endregion
