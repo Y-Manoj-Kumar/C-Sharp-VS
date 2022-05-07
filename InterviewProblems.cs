@@ -30,7 +30,7 @@ class ImpProblems
     public static void Main()
     {
         ImpProblems learn = new ImpProblems();
-        // learn.fact();
+        learn.swpapingVariablesWithoutThirdVariable();
     }
 
     #region #1 Prime Number
@@ -194,7 +194,7 @@ class ImpProblems
     }
 
 
-    public void patternSequence()
+    public void numberSequence()
     {
         Console.WriteLine("Enter a number ");
         int inputNum = Convert.ToInt32(Console.ReadLine());
@@ -416,9 +416,9 @@ class ImpProblems
             if (inputNum%i==0)
             {
                 sum = sum+i;
-                 Console.Write( "{0} ",i); // Here use "," (comma) instead of "+".
+                 Console.Write( "{0} ",i);  
             }
-            //  Console.WriteLine("Divisors of " + inputNum + " is " + i);
+ 
         }
         Console.WriteLine();
         Console.WriteLine("The sum of positive divisors of " + inputNum + " is " + sum);
@@ -473,7 +473,7 @@ class ImpProblems
 
     #region #12 Swapping Varibales without using third variable
 
-    int q =12;
+    int q =11;
     int w = 13;
     int e;
     public void swpapingVariablesWithoutThirdVariable()
@@ -589,7 +589,8 @@ class ImpProblems
 
     #region Decimal to Binary
   
-
+ 
+ 
 
     #endregion
 }
