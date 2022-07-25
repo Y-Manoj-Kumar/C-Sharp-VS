@@ -23,7 +23,7 @@ class AppLogic
         int userinput = int.Parse(Console.ReadLine());
         if(userinput == 1)
         {
-            displayscontact();
+            displayscontact(); // need to link with the respective class
         }
         else if(userinput == 2)
         {
@@ -41,6 +41,8 @@ class AppLogic
 
     }
 
+    #region  ContactsTab
+
     // public class ContactsTab
     // {
         /*
@@ -52,7 +54,8 @@ class AppLogic
         */
         public void displayscontact()
         {
-            Console.WriteLine("Shows the contact list");
+            Console.WriteLine("\nDisplays ContactsTab"); 
+            Console.WriteLine("\nShows the contact list");
             Console.WriteLine("Choose 1)createnewcontact 2)contactdetails");
             int userinput = int.Parse(Console.ReadLine());
             if (userinput == 1)
@@ -79,6 +82,10 @@ class AppLogic
         //The details which we entered above need to link below
         public void contactdetails()
         {
+            //You can make a videocall,audiocall and message
+            //You can edit the details and bookmark too
+            //And also you can find the other apps too which are similar to it ,where that respective number is registered 
+
             Console.WriteLine("FirstName:Harry ");
             Console.WriteLine("lastname:Potter");
             Console.WriteLine("MobileNumber:873625326");
@@ -87,5 +94,26 @@ class AppLogic
 
     // }
 
+    #endregion
 
+
+
+    #region RecentTab
+
+    /*
+    
+-->In this tab you can find the contacts that are sorted by time based and also sorted by days tooo.
+-->Here you can find the contacts which you called,missed call and rejected calls with date ,time and sim connection.
+-->From here also you can view the contact details .
+-->Here you can find the quick dial symbol where You can make a call without entering into the conatact details.
+-->When you cliclks on the profile bar the bar gets extended and shows the video and audio call option
+   and as you can find the call history of the respective contact 
+-->In this tab when you clicks on the profile the contact details will display and when you clicks on other than
+   profile you can find those extended options
+-->Here also you can search the contacts by using search bar and numpad.
+-->
+
+    */
+
+    #endregion
 }
