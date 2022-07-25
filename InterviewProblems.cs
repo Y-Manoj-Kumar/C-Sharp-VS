@@ -27,11 +27,11 @@ using System.Configuration;
 */
 class ImpProblems
 {
-    public static void Main()
-    {
-        ImpProblems learn = new ImpProblems();
-        learn.swpapingVariablesWithoutThirdVariable();
-    }
+    // public static void Main()
+    // {
+    //     ImpProblems learn = new ImpProblems();
+    //     learn.swpapingVariablesWithoutThirdVariable();
+    // }
 
     #region #1 Prime Number
     /*
@@ -115,7 +115,7 @@ class ImpProblems
     #endregion
 
 
-    #region #4 Factorial Number
+    #region #4 Factorial Number 
 
     public  void FactorialNum()
     {
@@ -593,4 +593,7 @@ class ImpProblems
  
 
     #endregion
+
+
 }
+
