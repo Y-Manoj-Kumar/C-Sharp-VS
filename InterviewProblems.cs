@@ -33,6 +33,7 @@ class ImpProblems
     //     learn.swpapingVariablesWithoutThirdVariable();
     // }
 
+
     #region #1 Prime Number
     /*
     -->We can provide input in many ways like through parameters,userinput,direct value declaring..........
@@ -72,7 +73,7 @@ class ImpProblems
     #endregion
 
 
-    #region #2 Fibonacci Series
+    #region #2 Fibonacci Series  
 
     /*
     -->Each number is equal to the sum of the preceding two numbers.

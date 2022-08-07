@@ -2,6 +2,8 @@
 using System;
 using System.Collections;
 using System.Linq;
+using System;
+using System.IO;
 
 class AppLogic
 {
@@ -9,9 +11,13 @@ class AppLogic
 
     public static void Main ()
     {
-        AppLogic al = new AppLogic();
+        AppLogic al = new AppLogic(); 
         al.start();
         // FavouriteTab ft = new FavouriteTab();
+
+
+        // SimpleFile file = new SimpleFile();
+        // file.WriteFile();
         
     }
 
@@ -23,7 +29,7 @@ class AppLogic
         int userinput = int.Parse(Console.ReadLine());
         if(userinput == 1)
         {
-            displayscontact(); // need to link with the respective class
+           displayscontact(); // need to link with the respective class
         }
         else if(userinput == 2)
         {
@@ -38,6 +44,10 @@ class AppLogic
              Console.WriteLine("DefaultTab");
         }
         
+        string path = "SimpleFile.txt";
+        string createText= "createnewcontact" + Environment.NewLine;
+        File.WriteAllText(path,createText);
+
 
     }
 
@@ -92,7 +102,9 @@ class AppLogic
             Console.WriteLine("Email:harry@gmai.com");
         }
 
-    // }
+        
+
+    // }    
 
     #endregion
 

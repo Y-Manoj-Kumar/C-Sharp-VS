@@ -25,6 +25,7 @@ class SimpleFile
         if (File.Exists(path))
         {
             Console.WriteLine(File.ReadAllText(path)); 
+            Console.WriteLine();
         }
         else
         {
